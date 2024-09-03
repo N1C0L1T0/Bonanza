@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <!---->
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!---->
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!---->
+
+    <!--Favicon-->
+    <link type="image/png" sizes="16x16" rel="icon" href="Assets/img/logo-circulo34.png">
+    <!---->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Bonanza</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg h-navbar fixed-top">
+        <div class="container d-flex justify-content-between align-items-center"> <!--colocar fixed top para el navbar-->
+          <div class="d-flex align-items-center">
+            <a href=""><img src="Assets/img/logo-circulo34.png" alt="Logo" width="85" height="80"></a>
+            <!--<img src="Assets1/img/Logo2.png" alt="Logo" width="50" height="60">-->
+            <a class="navbar-brand" href="#"><h1 class="h-brand">Bonanza</h1></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarScroll" style="padding-top: 0.5rem;">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 custom-search-bar" type="search" placeholder="¿Qué deseas aprender?" aria-label="Search">
+                <button class="btn btn-primary custom-btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+              </form>
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 d-flex justify-content-center align-items-center"> <!--my-2 = esta clase de Bootstrap aplica un margen vertical (margin-top y margin-bottom) de 2 a la lista , my-lg-0 = Aplica un margen vertical de 0 cuando el tamaño de la pantalla es lg (grande) o mayor-->
+              <li class="nav-item" style="text-align: center;">
+                <a class="nav-link h-login" aria-current="page" href="SingIn.html">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item">
+                <button onclick="window.location.href='register.html';" class="btn btn-primary h-sigin" type="submit">¡Quiero Ser Parte!</button>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+
+    <!--Carrusel-->
+    <section class="home-section">
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="margin-top: 80px;">
+
+          <!--Botones de desplazamineto-->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            
+          </div>
+
+          <!--Elementos dentro del banner-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center align-items-center banner1-slide"> 
+                  <div class="slide-one-1 d-flex justify-content-center align-items-center">
+                    <img class="img-slide-one" src="Assets/img/banner1.svg" alt="">
+                  </div>
+                  <div class="slide-one-2">
+                      <h2 style="color: #3ca500;">Bonanza</h2>
+                      <h2>Enriquece tu conocimiento; haz crecer tu emprendimiento.</h2>
+                      <p>Estas frases están diseñadas para atraer a un público interesado en el empoderamiento económico, el desarrollo comunitario y la educación accesible.</p>
+                      <p><a class="btn btn-lg btn-primary button-slide-one" href="register.html">¡Empezar a aprender!</a></p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="carousel-item"> 
+              <div class="d-flex justify-content-center align-items-center banner1-slide"> 
+                  <div class="slide-one-2">
+                      <h2>Enriquece tu conocimiento; haz crecer tu emprendimiento.</h2>
+                      <p>Estas frases están diseñadas para atraer a un público interesado en el empoderamiento económico, el desarrollo comunitario y la educación accesible.</p>
+                      <div class="d-flex justify-content-start align-items-center" style="margin-top: 30px;">
+                      <p><a class="btn btn-lg btn-primary button-slide-one" href="#marketing">Lineas de Conocimiento</a></p>
+                      <p><a class="btn btn-lg btn-primary button-slide-one-2" href="register.html">¡Empezar a aprender!</a></p>
+                      </div>
+                  </div>
+
+                  <div class="slide-one-1 d-flex justify-content-center align-items-center">
+                    <img class="img-slide-two" src="Assets/img/mujer-2.svg" alt="">
+                  </div>
+
+              </div>
+            </div>
+          
+            
+          </div>
+          <!--Botones de next y previous-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+      </div>
+    </section>
+
+    <!--Lineas de aprendizaje-->
+    <section class="home-section" id="marketing">
+      <div class="container marketing text-center">
+          <h2>Lineas de Conocimiento</h2>
+          <hr class="my-4"> 
+          <div class="row justify-content-center text-center">
+              <!-- Primer div -->
+              <article class="col-lg-3 col-md-6 col-sm-6 article-col">
+                  <div class="equal-height">
+                      <div class="img-container">
+                          <img src="Assets/img/ACAF.png" alt="ACAF" class="bd-placeholder-img">
+                      </div>
+                      <h3 class="fw-normal">Contabilidad y Finanzas</h3>
+                      
+                      <p><a class="btn btn-secondary btn-line-con" href="#">Ver Detalles »</a></p>
+                  </div>
+              </article>
+              <!-- Segundo div -->
+              <article class="col-lg-3 col-md-6 col-sm-6 article-col">
+                  <div class="equal-height">
+                      <div class="img-container">
+                          <img src="Assets/img/GIVIT.png" alt="GIVIT" class="bd-placeholder-img">
+                      </div>
+                      <h3 class="fw-normal">Tecnologia</h3>
+                      
+                      <p><a class="btn btn-secondary" href="#">Ver Detalles »</a></p>
+                  </div>
+              </article>
+              <!-- Tercer div -->
+              <article class="col-lg-3 col-md-6 col-sm-6 article-col">
+                  <div class="equal-height">
+                      <div class="img-container">
+                          <img src="Assets/img/IFPI.png" alt="IFPI" class="bd-placeholder-img">
+                      </div>
+                      <h3 class="fw-normal">Formación</h3>
+                      
+                      <p><a class="btn btn-secondary" href="#">Ver Detalles »</a></p>
+                  </div>
+              </article>
+              <!-- Cuarto div -->
+              <article class="col-lg-3 col-md-6 col-sm-6 article-col">
+                  <div class="equal-height">
+                      <div class="img-container">
+                          <img src="Assets/img/LEM.png" alt="LEM" class="bd-placeholder-img">
+                      </div>
+                      <h3 class="fw-normal">Asociatividad</h3>
+                      
+                      <p><a class="btn btn-secondary" href="#">Ver Detalles »</a></p>
+                  </div>
+              </article>
+          </div>
+      </div>
+    </section>
+
+    <!--Banner videos-->
+    <section class="home-section">
+      <div id="myCarousel2" class="carousel slide mb-6">
+
+          <!--Botones de desplazamineto-->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            
+          </div>
+
+          <!--Elementos dentro del banner-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <article class="row h-video">
+                <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-center align-items-center" style="padding: 0%;">
+                  <iframe src="https://www.youtube.com/embed/cVbAFumDQFs?si=a5OyC-hB46U3jskV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="s3-img"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12" style="padding-left: 20px;">
+                  <ul class="s3-list">
+                    <li><h2>Economia Popular</h2></li>
+                    <li style="padding-bottom: 10px;">
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-regular fa-star" style="color: #0965ac;"></i>
+                    </li>
+                    <li><i class="fa-solid fa-eye"></i> 673,532</li>
+                    <li style="padding-top: 10px;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis praesentium exercitationem, fuga laudantium rerum. Molestias eum, laborum corrupti qui, debitis, quisquam omnis sunt modi eveniet consequuntur voluptatum tempore. Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, totam quidem officiis optio magnam molestias fugiat.</p></li>
+                    <li><button type="button" class="btn btn-success v-boton">Ver tema completo</button></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-item">
+               <article class="row h-video">
+                <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-center align-items-center" style="padding: 0%;">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/e3yuMwfPAjw?si=FaZlotME1UE1YIhy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="s3-img"></iframe>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12" style="padding-left: 20px;">
+                  <ul class="s3-list">
+                    <li><h2>Economia Popular</h2></li>
+                    <li style="padding-bottom: 10px;">
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                      <i class="fa-regular fa-star" style="color: #0965ac;"></i>
+                    </li>
+                    <li><i class="fa-solid fa-eye"></i> 576,897</li>
+                    <li style="padding-top: 10px;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis praesentium exercitationem, fuga laudantium rerum. Molestias eum, laborum corrupti qui, debitis, quisquam omnis sunt modi eveniet consequuntur voluptatum tempore. Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, totam quidem officiis optio magnam molestias fugiat.</p></li>
+                    <li><button type="button" class="btn btn-success v-boton">Ver tema completo</button></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!--Botones de next y previous-->
+          <button class="carousel-control-prev button-banner-2" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next button-banner-2" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+      </div>
+    </section>
+
+    <!--Profesores-->
+    <section class="home-section py-4">
+      <div class="container profesores text-center">
+        <h2>Profesores</h2>
+        <hr class="my-4">
+        <div class="row">
+          <!-- Profesor 1 -->
+          <article class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+            <div class="card card-profesores">
+              <a href=""><img src="Assets/img/10.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Hernan Cortes</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+              </div>
+            </div>
+          </article>
+          <!-- Profesor 2 -->
+          <article class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+            <div class="card card-profesores">
+              <a href=""><img src="Assets/img/11.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Maria Saavedra</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+              </div>
+            </div>
+          </article>
+          <!-- Profesor 3 -->
+          <article class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+            <div class="card card-profesores">
+              <a href=""><img src="Assets/img/12.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Miguel Parra</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+              </div>
+            </div>
+          </article>
+          <!-- Profesor 4 -->
+          <div class="col-lg-3 col-md-6 mb-4 d-flex justify-content-center align-items-center">
+            <div class="card card-profesores">
+              <a href=""><img src="Assets/img/13.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Juana Ramirez</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Porque Preferirnos-->
+    <section class="home-section">
+      <div class="container preferirnos">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <h3 class="t-preferirnos">Más de <span class="tp-numero">5.000</span> Colombianos usan Bonanza para su formación personal y profesional</h3>
+          </div>
+        </div>
+        <div class="row fila-pre-1">
+          <div class="col-lg-6 col-md-6 col-sm-12 prefer-col-1">
+            <ul class="lista-prefer">
+              <li class="item-list">
+                <i class="fa-solid fa-circle-check" style="color: #3ca500;"></i>                
+                Flexibilidad de aprendizaje
+              </li>
+              <li class="item-list">
+                <i class="fa-solid fa-circle-check" style="color: #3ca500;"></i>
+                Expertos certificados
+              </li>
+              <li class="item-list">
+                <i class="fa-solid fa-circle-check" style="color: #3ca500;"></i>
+                Enfoque en bienestar y desarrollo
+              </li>
+              <li class="item-list">
+                <i class="fa-solid fa-circle-check" style="color: #3ca500;"></i>
+                Impacto social
+              </li>
+              <li class="item-list">
+                <i class="fa-solid fa-circle-check" style="color: #3ca500;"></i>
+                Material didáctico actualizado
+              </li>
+              <li class="item-list-buton">
+                <button onclick="window.location.href='register.html';" class="btn btn-primary list-buton" type="submit">¡Quiero ser parte de esto!</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 prefer-col-2 d-flex justify-content-center align-items-center">
+            <img src="Assets/img/preferirnosimg.svg" alt="img-preferirnos" width="100%">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Noticias-->
+    <section class="home-section" >
+      <article class="container-fluid noticias" style=" padding-bottom: 50px; padding-top: 50px;">
+        <div class="row fila-noticias">
+          <div class="col-lg-4 col-md-4 col-sm-12 noti-1">
+            <h4>Economia Popular</h4>
+            <h3>NOTICIAS</h3>
+          </div>
+          
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card card1" style="width: 100%;">
+              <img src="https://img.lalr.co/cms/2024/07/18211841/al_crimen_act_03_sabado_1080x900-3-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body" style="padding: 0%;">
+                <h5 class="card-title" style="color: #ffffff; background-color: #0965ac; padding: 15px;">Con $60.000 millones, el Gobierno anunció convocatoria para la economía popular</h5>
+                <p class="card-text" style="padding: 15px; margin:0%;">El proyecto se llama ‘Economía popular del cambio’ y espera beneficiar a 5.000 unidades productivas y a más de 25.000 personas</p>
+                <a href="https://www.larepublica.co/economia/gobierno-anuncio-convocatoria-para-la-economia-popular-3911104" class="btn btn-primary boton-noti" style="margin: 15px;" target="_blank">Ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="card card1" style="width: 100%;">
+              <img src="https://img.lalr.co/cms/2024/07/18082138/GM7CXglXQAAYK75.jpg" class="card-img-top" alt="...">
+              <div class="card-body" style="padding: 0%;">
+                <h5 class="card-title" style="color: #ffffff; background-color: #0965ac; padding: 15px; ">Prosperidad Social presentará este jueves una nueva estrategia de economía popular</h5>
+                <p class="card-text" style="padding: 15px; margin:0%;">El presidente Gustavo Petro participará esta tarde en el lanzamiento de la nueva iniciativa. También se entregará 2.200 donaciones</p>
+                <a href="https://www.larepublica.co/economia/gobierno-anuncio-convocatoria-para-la-economia-popular-3911104" class="btn btn-primary boton-noti" style="margin: 15px;" target="_blank">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row more-info-fila" style="margin-top: 10px;">
+          <div class="col-lg-12 col-md-12 col-sm-12 more-info">
+            <a href="https://www.google.com/search?sca_esv=19b551ade1306bfb&rlz=1C1ONGR_enCO1100CO1100&sxsrf=ADLYWIK-P_ljiLUSuafaSj12yaCmc2IqYQ:1724177977013&q=noticias+economia+popular&tbm=nws&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgacM8wnpugOpoilxhR0Lwp7B-Gky1aJetEssIbsXJdQW9LPOUVcaFGc2PCpV6OdKppzrvqnAreoNT_lj4ffjKR5fgOJQImkC77PGsg6p-0gqPurpJnSmcXhvK__Xg-yBxm-PhgyctmC4ToFGFe51ibxYIuGJXLkc5Kl8Cx6pTjBc_6xo3_nEYLX0WWJEuB-uAtcVxXw&sa=X&ved=2ahUKEwjTvuW-l4SIAxUjTTABHZy1GT8Q0pQJegQIERAB&biw=1366&bih=617&dpr=1" class="enlace" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff; margin: 5px 5px 5px 5px;"></i><p style="margin: 3px 0px 5px 5px; color: #ffffff;">Ver Más Noticias</p>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+      <section id="cuarto" class="home-section">
+          <div class="container-fluid c-footer">
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-contact">
+                      <h3>Contacto</h3>
+                      <hr>
+                      <p  class="item-contacto"><i class="fa-solid fa-phone icon-p" style="color: #ffffff;"></i> (+57 608) 270 96 00 ext. 84403</p>
+                      <p  class="item-contacto"><i class="fa-solid fa-envelope icon-p" style="color: #ffffff;"></i>contacto@bonanza.com</p>
+                      <p  class="item-contacto""><i class="fa-solid fa-location-dot icon-p" style="color: #ffffff;"></i>Cra. 1 #42-144, Ibagué, Tolima, Colombia</p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-info" >
+                      <h3>Sobre Nosotros</h3>
+                      <hr>
+                      <p class="item-contacto">El grupo de investigación de Gestión Empresarial, Servicios e Innovación Comercial GESICOM</p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-links">
+                      <h3>Enlaces útiles</h3>
+                      <hr>
+                      <ul>
+                          <li><a href="#"><p>Términos y condiciones</p></a></li>
+                          <li><a href="#"><p>Política de privacidad</p></a></li>
+                          <li><a href="#"><p>Preguntas frecuentes</p></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12 footer-social">
+                    <hr>  
+                    <h3 style="text-align: center;">Síguenos</h3>
+                      
+
+                      <a href="#"><svg class="fxi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3ca500" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></i></a>
+
+                      <a href="#"><svg class="fxi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3ca500" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+
+                      <a href="#"><svg class="fxi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#3ca500" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12 footer-bottom">
+                     
+                      <p style="color: #ffffff; text-align: center;">&copy; 2024 BONANZA. Todos los derechos reservados.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <!---->
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!---->
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!---->
+
+    <!--Favicon-->
+    <link type="image/png" sizes="16x16" rel="icon" href="Assets1/img/Logo2.png">
+    <!---->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Bonanza</title>
+</head>
+<body>
+  
+  <!--Navbar responsive-->
+  <nav class="navbar navbar-expand-lg h-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <a href=""><img src="Assets1/img/Logo2.png" alt="Logo" width="50" height="60"></a>
+        <a class="navbar-brand h-brand" href="#">Bonanza</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarScroll" style="padding-top: 0.5rem;">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2 custom-search-bar" type="search" placeholder="¿Qué deseas aprender?" aria-label="Search">
+            <button class="btn btn-primary custom-btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+          </form>
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 d-flex justify-content-center align-items-center"> <!--my-2 = esta clase de Bootstrap aplica un margen vertical (margin-top y margin-bottom) de 2 a la lista , my-lg-0 = Aplica un margen vertical de 0 cuando el tamaño de la pantalla es lg (grande) o mayor-->
+          <li class="nav-item" style="text-align: center;">
+            <a class="nav-link h-login" aria-current="page" href="#">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-primary h-sigin" type="submit">¡Quiero Ser Parte!</button>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+    <main>
+        <!--Sección 1 BANNER-->
+        <section class="home-section">
+          <div id="myCarousel" class="carousel slide mb-6" >
+
+            <!--Botones de desplazamineto-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+              
+            </div>
+    
+            <!--Elementos dentro del banner-->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center banner1-slide"> 
+                    <div class="slide-one-1 d-flex justify-content-center align-items-center">
+                      <img class="img-slide-one" src="Assets1/img/banner1.svg" alt="">
+                    </div>
+                    <div class="slide-one-2">
+                        <h2 style="color: #3ca500;">Bonanza</h2>
+                        <h2>Enriquece tu conocimiento; haz crecer tu emprendimiento.</h2>
+                        <p>Estas frases están diseñadas para atraer a un público interesado en el empoderamiento económico, el desarrollo comunitario y la educación accesible.</p>
+                        <p><a class="btn btn-lg btn-primary button-slide-one" href="#">¡Empezar a aprender!</a></p>
+                    </div>
+                </div>
+              </div>
+    
+              <!--
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center align-items-center" style="margin-left: 150px; margin-right: 150px;">
+                    <div class="col-lg-6 col-md-6 col-sm-6 slide-one">
+                        <h2 class="h-slide-two">Enriquece tu conocimiento; haz crecer tu emprendimiento.</h2>
+                        <p class="text-slide-two">Estas frases están diseñadas para atraer a un público interesado en el empoderamiento económico, el desarrollo comunitario y la educación accesible.</p>
+                        <ul class="d-flex justify-content-start align-items-center" style="list-style: none; padding: 0%; margin: 0%;">
+                            <li><p><a class="btn btn-lg btn-primary button-slide-two-1" href="#">Lineas de Aprendizaje</a></p></li>
+                            <li><p><a class="btn btn-lg btn-primary button-slide-two-2" href="#" style="margin: 10px;">Empezar a aprender</a></p></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center align-items-center">
+                        <img src="Assets1/img/banner2.svg" alt="banner1" style="width: 70%;">   
+                    </div>
+                </div>
+              </div>
+            
+              -->
+            </div>
+            <!--Botones de next y previous-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+    
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+    
+          </div>
+
+        </section>
+
+        <!--Sección 2 LINEAS DE APRENDIZAJE-->
+        <section class="home-section">
+          <a href="pruebas.html" target="_blank">pruebas</a>
+          <div class="container titulo-ape">
+            <h2 style="font-weight: 800; text-align: center;">Lineas de Aprendizaje</h2>
+            <hr class="line-p">
+          </div>
+          
+          <article class="container" style="padding-top: 30px; padding-bottom: 50px;">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/ACAF.png" class="card-img-top img-car-t" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Finanzas</h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/GIVIT.png" class="card-img-top img-car-t" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="margin-top: 5px;">Tecnologia</h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/IFPI.png" class="card-img-top img-car-t" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="margin-top: 25px;">Formación</h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/LEM.png" class="card-img-top img-car-t" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title" style="margin-top: 18px;">Comercio</h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </section>
+
+        
+
+        <!--Sección 3 VIDEO INTRODUCTORIO-->
+        <section class="home-section" style=" padding-bottom: 10px;" >
+          <article class="row h-video">
+            <div class="col-lg-8 d-flex justify-content-center align-items-center" style="padding: 0%;">
+              <iframe src="https://www.youtube.com/embed/cVbAFumDQFs?si=a5OyC-hB46U3jskV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="s3-img"></iframe>
+            </div>
+            <div class="col-lg-4" style="padding-left: 20px;">
+              <ul class="s3-list">
+                <li><h2>Economia Popular</h2></li>
+                <li style="padding-bottom: 10px;">
+                  <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                  <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                  <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                  <i class="fa-solid fa-star" style="color: #0965ac;"></i>
+                  <i class="fa-regular fa-star" style="color: #0965ac;"></i>
+                </li>
+                <li><i class="fa-solid fa-eye"></i> 576,897</li>
+                <li style="padding-top: 10px;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis praesentium exercitationem, fuga laudantium rerum. Molestias eum, laborum corrupti qui, debitis, quisquam omnis sunt modi eveniet consequuntur voluptatum tempore. Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, totam quidem officiis optio magnam molestias fugiat.</p></li>
+                <li><button type="button" class="btn btn-success v-boton">Ver tema completo</button></li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        
+        <!--Sección 4 Profesores-->
+        <section class="home-section">
+          <div class="container titulo-ape">
+            <h2 style="font-weight: 800; text-align: center;">PROFESORES</h2>
+            <hr class="line-p">
+          </div>
+          
+          <article class="container" style="padding-top: 30px; padding-bottom: 50px;">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/10.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Hernan Cortes</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/11.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Maria Saavedra</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/12.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Miguel Parra</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card car-til" style="width: 100%;">
+                  <a href=""><img src="Assets1/img/13.jpg" class="card-img-top img-car" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title">Juana Ramirez</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur quasi, laborum velit sunt ipsam! Quibusdam corrupti autem cumque voluptas</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </section>
+
+        <!--Sección 5 Noticias-->
+        <section class="home-section" style=" padding-bottom: 50px;">
+          <article class="container">
+            <div class="row">
+              <div class="col-lg-4 noti-1" style="position: relative;">
+                <h4 style="font-size: 24px; font-weight: 600; position: absolute; bottom: 90px; left: 20px; ">Economia Popular</h4>
+                <h4 style="font-size: 62px; position: absolute; bottom: 0; left: 20px; padding-bottom: 20px;">NOTICIAS</h4>
+              </div>
+              
+              <div class="col-lg-4">
+                <div class="card card1" style="width: 100%;">
+                  <img src="https://img.lalr.co/cms/2024/07/18211841/al_crimen_act_03_sabado_1080x900-3-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body" style="padding: 0%;">
+                    <h5 class="card-title" style="color: #ffffff; background-color: #0965ac; padding: 15px;">Con $60.000 millones, el Gobierno anunció convocatoria para la economía popular</h5>
+                    <p class="card-text" style="padding: 15px; margin:0%;">El proyecto se llama ‘Economía popular del cambio’ y espera beneficiar a 5.000 unidades productivas y a más de 25.000 personas</p>
+                    <a href="https://www.larepublica.co/economia/gobierno-anuncio-convocatoria-para-la-economia-popular-3911104" class="btn btn-primary boton-noti" style="margin: 15px;" target="_blank">Ver más</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card card1" style="width: 100%;">
+                  <img src="https://img.lalr.co/cms/2024/07/18082138/GM7CXglXQAAYK75.jpg" class="card-img-top" alt="...">
+                  <div class="card-body" style="padding: 0%;">
+                    <h5 class="card-title" style="color: #ffffff; background-color: #0965ac; padding: 15px; ">Prosperidad Social presentará este jueves una nueva estrategia de economía popular</h5>
+                    <p class="card-text" style="padding: 15px; margin:0%;">El presidente Gustavo Petro participará esta tarde en el lanzamiento de la nueva iniciativa. También se entregará 2.200 donaciones</p>
+                    <a href="https://www.larepublica.co/economia/gobierno-anuncio-convocatoria-para-la-economia-popular-3911104" class="btn btn-primary boton-noti" style="margin: 15px;" target="_blank">Ver más</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row more-info-fila" style="margin-top: 10px;">
+              <div class="col-lg-12 more-info">
+                <a href="https://www.google.com/search?sca_esv=19b551ade1306bfb&rlz=1C1ONGR_enCO1100CO1100&sxsrf=ADLYWIK-P_ljiLUSuafaSj12yaCmc2IqYQ:1724177977013&q=noticias+economia+popular&tbm=nws&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgacM8wnpugOpoilxhR0Lwp7B-Gky1aJetEssIbsXJdQW9LPOUVcaFGc2PCpV6OdKppzrvqnAreoNT_lj4ffjKR5fgOJQImkC77PGsg6p-0gqPurpJnSmcXhvK__Xg-yBxm-PhgyctmC4ToFGFe51ibxYIuGJXLkc5Kl8Cx6pTjBc_6xo3_nEYLX0WWJEuB-uAtcVxXw&sa=X&ved=2ahUKEwjTvuW-l4SIAxUjTTABHZy1GT8Q0pQJegQIERAB&biw=1366&bih=617&dpr=1" class="enlace" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff; margin: 5px 5px 5px 5px;"></i><p style="margin: 3px 0px 5px 5px; color: #ffffff;">Ver Más Noticias</p>
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!--Sección 6
+        <section class="home-section">
+            
+        </section>-->
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+      <section id="cuarto" class="home-section">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12 footer-contact">
+                      <h3>Contacto</h3>
+                      <hr>
+                      <p  class="item-contacto"><i class="fa-solid fa-phone icon-p" style="color: #ffffff;"></i> (+57 608) 270 96 00 ext. 84403</p>
+                      <p  class="item-contacto"><i class="fa-solid fa-envelope icon-p" style="color: #ffffff;"></i>contacto@bonanza.com</p>
+                      <p  class="item-contacto""><i class="fa-solid fa-location-dot icon-p" style="color: #ffffff;"></i>Cra. 1 #42-144, Ibagué, Tolima, Colombia</p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 footer-info" >
+                      <h3>Sobre Nosotros</h3>
+                      <hr>
+                      <p class="item-contacto">El grupo de investigación de Gestión Empresarial, Servicios e Innovación Comercial GESICOM</p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 footer-links">
+                      <h3>Enlaces útiles</h3>
+                      <hr>
+                      <ul>
+                          <li><a href="#">Términos y condiciones</a></li>
+                          <li><a href="#">Política de privacidad</a></li>
+                          <li><a href="#">Preguntas frecuentes</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12 footer-social">
+                    <hr>  
+                    <h3 style="text-align: center;">Síguenos</h3>
+                      
+
+                      <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12 footer-bottom">
+                     
+                      <p style="color: #ffffff; text-align: center;">&copy; 2024 BONANZA. Todos los derechos reservados.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>

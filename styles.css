@@ -1,0 +1,1190 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px 50px 10px 50px;
+    
+    
+}
+
+h1 {
+    color: #000000;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+p {
+    color: #000000;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+
+.home-section:nth-of-type(even) {
+    background-color:  #f7f5f5;
+}
+
+
+
+
+
+
+/*Navbar*/
+
+.h-navbar {
+    background-color: #ffffff;
+    /* Aplica la sombra */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    
+}
+
+.h-brand {
+    color: #0965ac;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 28px;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.h-brand:hover {
+    color: #0965ac;
+}
+
+
+.custom-search-bar {
+    border-radius: 40px;
+    border-color: #3ca500;
+}
+
+.h-login {
+    color: #0965ac;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+
+.h-sigin {
+    color: #ffffff;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: #3ca500;
+    border: 1px solid #3ca500;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.custom-btn {
+    background-color: #0965ac; /* Fondo azul */
+    border: none;
+    border-radius: 50%; /* Hacer el botón redondo */
+    width: 35px; /* Ancho del botón */
+    height: 35px; /* Alto del botón */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.custom-search-bar:hover {
+    background-color: #edf7fc;
+}
+
+.custom-btn:hover {
+    background-color: #3FA7D6; /* Azul más claro en hover */
+}
+
+.h-login:hover {
+    color: #0965ac; /* Azul más claro en hover */
+    text-decoration:underline;
+}
+
+.h-sigin:hover{
+    color: #ffffff; /* Azul más claro en hover */
+    background-color: #0965ac;
+}
+
+.custom-btn i {
+    font-size: 16px; /* Tamaño del ícono */
+}
+
+
+
+
+/*Banner*/
+
+/* Cambiar color de la flecha izquierda */
+.carousel-control-prev-icon {
+    background-color: #0965ac; /* Cambia #ff0000 por el color que desees */
+    border-radius: 50%; /* Opcional: Para hacer las flechas circulares */
+    width: 40px;  /* Ajusta el ancho del icono */
+    height: 40px; /* Ajusta la altura del icono */
+} 
+
+/* Cambiar color de la flecha derecha */
+.carousel-control-next-icon {
+    background-color: #0965ac; /* Cambia #ff0000 por el color que desees */
+    border-radius: 50%; /* Opcional: Para hacer las flechas circulares */
+    width: 40px;  /* Ajusta el ancho del icono */
+    height: 40px; /* Ajusta la altura del icono */
+}
+
+/* Estilos para los indicadores del carrusel */
+
+.carousel-indicators [data-bs-target] {
+    background-color: #0965ac; /* Color de fondo por defecto */
+    border: none; /* Quitar borde por defecto */
+  }
+  
+  .carousel-indicators [data-bs-target].active {
+    background-color: #ccc; /* Color de fondo cuando está activo */
+  }
+
+.slide-one-2 h2{
+    color: #000000;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 42px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.button-slide-one {
+    background-color: #0965ac;
+    border-color: #0965ac;
+    border-radius: 15px;
+}
+
+.button-slide-one:hover {
+    background-color: #3ca500;
+    border-color:#3ca500;
+}
+
+.button-slide-one-2 {
+    margin-left: 15px;
+    color: #0965ac;
+    background-color: #ffffff;
+    border-color: #0965ac;
+    border-radius: 15px;
+}
+
+.button-slide-one-2:hover {
+    color: #ffffff;
+    background-color: #0965ac;
+    border-color: #0965ac;
+}
+
+.banner1-slide {
+    justify-content: center;
+    margin: 0px 150px 0px 150px;
+    max-width: 1400px;
+    position: relative;
+
+}
+
+.button-slide-two-1 {
+    background-color: #0965ac;
+    border-color: #0965ac;
+    border-radius: 15px;
+}
+
+.button-slide-two-1:hover {
+    background-color: #3ca500;
+    border-color:#3ca500;
+}
+
+.button-slide-two-2 {
+    color: #0965ac;
+    background-color:#ffffff;
+    border-color:#0965ac;
+    border-radius: 15px;
+}
+
+.button-slide-two-2:hover {
+    color: #ffffff;
+    background-color:#3ca500;
+    border-color:#3ca500;
+}
+
+.h-slide-two {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+
+
+@media (max-width: 576px) {
+    .slide-one-2 {
+        margin-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .banner1-slide {
+        margin-left: 70px;
+        margin-right: 70px;
+
+    }
+
+    .slide-one-2 h2{
+        color: #000000;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 26px;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    .slide-one-2 p {
+        color: #000000;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .button-slide-one .button-slide-one-1 {
+        font-size: 12px;
+    }
+
+    
+}
+
+@media (min-width: 576px) {
+    .slide-one-2 {
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slide-one-1 {
+        display: none !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+    .slide-one-2 {
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .slide-one-2 h2{
+        color: #000000;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 26px;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    .slide-one-2 p {
+        color: #000000;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .banner1-slide {
+        margin-top: 20px;
+    }
+
+    .button-slide-one .button-slide-one-2 {
+        font-size: 12px;
+    }
+
+    .img-slide-one {
+        width: 250px;
+    }
+
+    .img-slide-two {
+        width: 350px;
+    }
+}
+
+@media (min-width: 992px) {
+    .h-brand {
+      font-size: 28px; /* Ajusta según sea necesario */
+    }
+
+    .cont-brand {
+        padding: 0%;
+        margin-right: 10px;
+    }
+
+    .img-logo {
+        width: "30";
+        height: "40";
+    }
+
+    .h-login, .h-sigin {
+      font-size: 16px;
+    }
+    .custom-btn {
+      width: 40px; /* Ajusta según sea necesario */
+      height: 40px; /* Ajusta según sea necesario */
+    }
+    .custom-search-bar {
+        width: 400px;
+    }
+
+    .slide-one-2 h2 {
+        font-size: 46px;
+    }
+
+    .slide-one-2 p {
+        color: #000000;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 20px;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .slide-one-2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .img-slide-one {
+        width: 350px;
+    }
+
+    .button-slide-one .button-slide-one-2 {
+        font-size: 18px;
+    }
+
+  }
+
+
+
+
+
+
+
+/*Lineas de aprendizaje*/
+
+.fw-normal {
+    color: #000000;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.container.marketing {
+    padding-top: 60px; 
+    padding-bottom: 60px;
+}
+
+.container.marketing h2{
+    color: #363636;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.container.marketing h3{
+    color: #000000;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bd-placeholder-img {
+    background-color: white; 
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.13);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.212); 
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; 
+    padding: 15px;
+}
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100%;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    margin-bottom: 30px; 
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.301); 
+    
+}
+.equal-height .img-container, 
+.equal-height h2, 
+.equal-height p, 
+.equal-height a {
+    margin-bottom: 15px; 
+}
+.btn-secondary {
+    color: white; 
+    background-color: #0965ac;
+    border-color: #0965ac;
+}
+
+.btn-secondary:hover {
+    background-color: #3ca500;
+    border-color: #3ca500;
+}
+
+.article-col {
+    margin-bottom: 20px; 
+
+}
+
+.article-col p {
+    text-align: center;
+}
+
+.fxi {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*Banner Videos*/
+.h-video {
+    background-color: #ffffff;
+    margin: 50px 100px 50px 100px;
+    padding: 10px;
+    
+    /* Aplica la sombra */
+    box-shadow: 0px 0px 10px #8a8a8a;
+    border-radius: 20px;
+    
+}
+
+.s3-img {
+    border-radius: 20px;
+    width: 100%;
+    height: 425px; /* Puedes ajustar esta altura según sea necesario */
+}
+
+.s3-list {
+    padding-top: 20px;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding-left: 0; /* Opcional: elimina el espaciado a la izquierda */
+}
+
+@media (max-width: 576px) {
+    .h-video {
+        margin: 0px;
+    }
+
+    .s3-img {
+        width: 100%;
+        height: 300px; /* Puedes ajustar esta altura según sea necesario */
+    }
+
+    .card-profesores {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .button-banner-2 {
+        display: none !important;
+    }
+
+
+}
+
+.v-boton {
+    background-color: #0965ac; /* Cambia este valor por el color que desees */
+    color: white; /* Cambia el color del texto si es necesario */
+    border-color: #0965ac; /* Cambia el color del borde si es necesario */
+}
+
+.v-boton:hover {
+    background-color: #3ca500;
+    border-color: #3ca500;
+}
+
+
+/*Profesores*/
+
+.container.profesores h2{
+    color: #363636;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.card-profesores {
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.219); 
+}
+
+
+
+
+
+
+/*Sección Porque preferirnos*/
+
+.preferirnos {
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.t-preferirnos {
+    color: #363636;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+}
+
+.tp-numero {
+    color: #3ca500;
+}
+
+.fila-pre-1{
+    margin-top: 50px;
+}
+
+.item-list {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.219); 
+    transition: transform 0.3s;
+}
+
+.prefer-col-1 {
+    padding-right: 50px;
+}
+
+.lista-prefer{
+    list-style-type:none; /* Elimina los puntos de la lista */
+    margin: 0%;
+    padding: 0%;
+}
+
+.lista-prefer li{
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
+.lista-prefer i{
+    color: #28a745; /* Color del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 30px;
+}
+
+.item-list{
+    color: #363636;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: start;
+    margin: 20px;
+    padding: 15px;
+}
+
+.item-list {
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+  
+.item-list:hover {
+    transform: scale(1.05); /* Agranda el elemento en un 5% */
+}
+
+.item-list-buton {
+    margin-top: 30px;
+}
+  
+.list-buton{
+    color: #ffffff;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: #3ca500;
+    border: 1px solid #3ca500;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.list-buton:hover{
+    color: #ffffff; /* Azul más claro en hover */
+    background-color: #0965ac;
+}
+
+/*Sección Noticias*/
+
+.noti-1 {
+    background-color: #3ca500;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.noti-1 h3 {
+    color: #ffffff;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0px 0px 15px 15px;
+}
+
+.noti-1 h4 {
+    color: #ffffff;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    margin: 0px 0px 0px 15px;
+}
+
+.card1 {
+    border-radius: 15px;
+}
+
+.card1 img{
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.boton-noti {
+    background-color: #3ca500;
+    border-color: #3ca500;
+}
+
+.boton-noti:hover {
+    background-color: #0965ac;
+}
+
+.more-info{
+    background-color: #3ca500;
+    border: 2px solid #3ca500;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.enlace {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 576px) {
+    .fila-noticias, .more-info-fila {
+        margin: 10px;
+    }
+
+    .card1{
+        margin-top: 20px;
+    }
+    
+    .noti-1 h3 {
+        font-size: 24px;
+        margin: 0px 0px 15px 15px;
+    }
+
+    .noti-1 h4 {
+        font-size: 24px;
+        margin: 10px 0px 0px 15px;
+    }
+}
+
+@media (min-width: 576px) {
+    .fila-noticias, .more-info-fila {
+        margin: 0px;
+    }
+
+    .card1{
+        margin-top: 20px;
+    }
+
+    .noti-1 h3 {
+        font-size: 24px;
+        margin: 0px 0px 15px 15px;
+    }
+
+    .noti-1 h4 {
+        font-size: 24px;
+        margin: 10px 0px 0px 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .fila-noticias, .more-info-fila {
+        margin: 0px;
+    }
+
+    .card1{
+        margin-top: 0px;
+    }
+
+    .noti-1 h3 {
+        font-size: 40px;
+    }
+
+    .noti-1 h4 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .fila-noticias, .more-info-fila {
+        margin: 0px;
+    }
+
+    .card1{
+        margin-top: 0px;
+    }
+
+    .noti-1 h3 {
+        font-size: 54px;
+    }
+
+    .noti-1 h4 {
+        font-size: 24px;
+    }
+     
+    .noticias {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+}
+
+
+
+
+/*fOOTER*/
+footer {
+    background-color: #272727;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.c-footer h3 {
+    color: #3ca500;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 38px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: start;
+}
+
+.c-footer hr{
+    height: 3px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.c-footer p {
+    color: #ffffff;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-contact, .footer-info, .footer-links {
+    padding: 20px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #3ca500;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+/* pa los links*/
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+    text-align: start;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.item-contacto {
+    color: #ffffff;
+    text-align: start;
+}
+
+.icon-p {
+    margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+    
+}
+
+@media (min-width: 576px) {
+    .c-footer {
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .c-footer h3 {
+        color: #3ca500;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 28px;
+        font-weight: 600;
+        font-style: normal;
+        text-align: start;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .c-footer h3 {
+        color: #3ca500;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 28px;
+        font-weight: 600;
+        font-style: normal;
+        text-align: start;
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+        margin-top: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+
+
+
+
+
+/*____________________________________________________________________________________________________________________*/
+
+/*Pagina Inicio de sesion*/
+
+.sesionInicio {
+    margin-top: 170px;
+    margin-bottom: 70px;
+}
+
+.columna1-sing {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.tituloSingIn {
+    color: #363636;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 32px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Estilos para los grupos de campos */
+.form__group {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Estilos para las etiquetas */
+.form__label {
+    display: block;
+    margin-bottom: 8px;
+    color: #363636;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Estilos para los campos de entrada */
+.form__control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form__control:hover{
+    border-color: #3ca500  !important;
+    color: #000000 !important;
+}
+
+/* Estilos para el botón de enviar */
+.form__button-group {
+    text-align: center;
+}
+
+.BotonLogin  {
+    background-color: #3ca500 !important;
+    border-color: #3ca500 !important;
+    color: #ffffff !important; /* Color del texto en negro para contraste */
+    font-weight: 600;
+    width: 100%;
+}
+
+.BotonLogin:hover {
+    background-color: #0965ac !important; /* Un ligero cambio de color en el hover */
+    border-color: #0965ac !important;
+    color: #ffffff !important;
+}
+
+.form__remember-me {
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 0px 0px 0px 0px;
+}
+
+.CrearCuenta {
+    display: flex;
+    justify-content: center;
+}
+
+.CrearCuenta a {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #0965ac;
+}
+
+.forgot {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot a {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #0965ac;
+}
+
+@media (max-width: 576px) {
+    .columna1-sing {
+        padding-bottom: 50px;
+     }
+}
+
+
+/*____________________________________________________________________________________________________________________*/
+
+/*Pagina Registro*/
+
+.nombreApe {
+    padding: 0%;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #6d6d6d;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+select:hover {
+    border-color: #3ca500  !important;
+    color: #000000 !important;
+}
+  
+option {
+    padding: 10px;
+    color: #363636;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+  
+/*Mostrar contraseña*/
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form__control {
+    width: 100%;
+    padding-right: 60px; /* Espacio para el botón */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff; /* Color del texto del botón */
+    font-size: 16px;
+}
+
+.CrearCuenta1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.CrearCuenta1 a {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #0965ac;
+}
+
+
+
+
+
+
+
+
+/* PALETA DE COLORE*/
+.color {
+    background-color: #0965ac
+}
+
+.color2 { 
+    background-color: #3FA7D6
+}
+
+.color3 { 
+    background-color: #57E098
+}
+
+.color4 { 
+    background-color: #64df2c
+}
+
+.color5 { 
+    
+    background-color: #3ca500
+}
+/* ___________________________ */

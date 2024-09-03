@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <!---->
+    
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!---->
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!---->
+
+    <!--Favicon-->
+    <link type="image/png" sizes="16x16" rel="icon" href="Assets/img/logo-circulo34.png">
+    <!---->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Bonanza</title>
+    <style>
+    </style>
+
+</head>
+<body>
+
+  <label for="departamentos">Selecciona un departamento:</label>
+<select id="departamentos" onchange="mostrarMunicipios()">
+  <!-- Opciones de departamentos cargadas dinámicamente -->
+</select>
+
+<label for="municipios">Selecciona un municipio:</label>
+<select id="municipios">
+  <!-- Opciones de municipios cargadas dinámicamente -->
+</select>
+
+<script>
+  let municipiosPorDepartamento = {};
+
+  // Función para cargar los datos del archivo JSON
+  async function cargarDatos() {
+    try {
+      const response = await fetch('municipios.json'); // Ruta al archivo JSON
+      municipiosPorDepartamento = await response.json();
+      cargarDepartamentos();
+    } catch (error) {
+      console.error('Error al cargar los datos:', error);
+    }
+  }
+
+  // Función para cargar los departamentos en el <select>
+  function cargarDepartamentos() {
+    const departamentosSelect = document.getElementById("departamentos");
+
+    // Llenamos el <select> con los departamentos
+    for (const departamento in municipiosPorDepartamento) {
+      const option = document.createElement("option");
+      option.value = departamento;
+      option.textContent = departamento.charAt(0).toUpperCase() + departamento.slice(1).replace(/_/g, ' ');
+      departamentosSelect.appendChild(option);
+    }
+  }
+
+  // Función para mostrar los municipios cuando se selecciona un departamento
+  function mostrarMunicipios() {
+    const departamentoSeleccionado = document.getElementById("departamentos").value;
+    const municipiosSelect = document.getElementById("municipios");
+    
+    // Limpiamos las opciones actuales
+    municipiosSelect.innerHTML = "";
+
+    // Obtenemos los municipios correspondientes al departamento seleccionado
+    const municipios = municipiosPorDepartamento[departamentoSeleccionado];
+
+    // Agregamos los municipios al <select> de municipios
+    municipios.forEach(municipio => {
+      const option = document.createElement("option");
+      option.value = municipio.toLowerCase();
+      option.textContent = municipio;
+      municipiosSelect.appendChild(option);
+    });
+  }
+
+  // Cargamos los datos al cargar la página
+  window.onload = cargarDatos;
+</script>
+
+
+</body>
+</html>
+
+
+
+
