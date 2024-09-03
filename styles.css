@@ -243,10 +243,10 @@ p {
 
 @media (max-width: 576px) {
     .slide-one-2 {
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .banner1-slide {
@@ -273,10 +273,23 @@ p {
         font-style: normal;
     }
 
-    .button-slide-one .button-slide-one-1 {
-        font-size: 12px;
+    .button-slide-one {
+        color: #ffffff;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
     }
 
+    .button-slide-one-2 {
+        color: #0965ac;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+    }
     
 }
 
@@ -286,6 +299,10 @@ p {
         margin-left: 30px;
         margin-right: 30px;
         margin-bottom: 20px;
+    }
+
+    .button-slide-one .button-slide-one-1 {
+        font-size: 12px;
     }
 }
 
@@ -487,6 +504,14 @@ p {
     height: 30px;
 }
 
+@media (max-width: 576px) {
+    .container.marketing {
+        padding-top: 60px; 
+        padding-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
 
 
@@ -521,7 +546,7 @@ p {
 
 @media (max-width: 576px) {
     .h-video {
-        margin: 0px;
+        margin: 30px;
     }
 
     .s3-img {
@@ -529,9 +554,6 @@ p {
         height: 300px; /* Puedes ajustar esta altura según sea necesario */
     }
 
-    .card-profesores {
-        width: 70%;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -570,12 +592,25 @@ p {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.219); 
 }
 
+@media (max-width: 576px) {
+    .container.profesores {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .img-car {
+        border-radius: 15px 15px 0px 0px;
+    }
+}
 
 
 
 
 
 /*Sección Porque preferirnos*/
+
+.cont-t-preferirnos {
+    padding: 0px 0px 30px 0px;
+}
 
 .preferirnos {
     margin-top: 50px; 
@@ -597,13 +632,13 @@ p {
 }
 
 .fila-pre-1{
-    margin-top: 50px;
+    
 }
 
 .item-list {
     background-color: white;
     border-radius: 10px;
-    margin: 20px;
+    
     width: 100%;
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.219); 
@@ -611,7 +646,7 @@ p {
 }
 
 .prefer-col-1 {
-    padding-right: 50px;
+    padding: 0px 30px 0px 30px;
 }
 
 .lista-prefer{
@@ -638,8 +673,9 @@ p {
     font-weight: 500;
     font-style: normal;
     text-align: start;
-    margin: 20px;
+    
     padding: 15px;
+    width: 100%;
 }
 
 .item-list {
@@ -651,8 +687,9 @@ p {
 }
 
 .item-list-buton {
-    margin-top: 30px;
+    margin: 20px;
 }
+
   
 .list-buton{
     color: #ffffff;
@@ -661,7 +698,6 @@ p {
     font-size: 20px;
     font-weight: 800;
     font-style: normal;
-    margin-left: 20px;
     padding: 10px 10px 10px 10px;
     text-align: center;
     background-color: #3ca500;
@@ -674,6 +710,43 @@ p {
     color: #ffffff; /* Azul más claro en hover */
     background-color: #0965ac;
 }
+
+@media (max-width: 576px) {
+    .cont-t-preferirnos {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .prefer-col-1 li {
+        color: #000000;
+        font-family: "Public Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .list-buton{
+        color: #ffffff;
+        font-family: "Public Sans", sans-serif;
+        font-size: 16px;
+    }
+
+    .item-list p {
+        text-align: left;
+        margin: 0%;
+    }
+
+    .t-preferirnos {
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+
+    .prefer-col-2 {
+        padding: 30px 30px 0px 30px;
+    }
+}
+
+
+
 
 /*Sección Noticias*/
 
@@ -753,6 +826,10 @@ p {
     .noti-1 h4 {
         font-size: 24px;
         margin: 10px 0px 0px 15px;
+    }
+
+    .card-noticias{
+        padding: 0%;
     }
 }
 
