@@ -54,7 +54,7 @@ p {
 }
 
 .h-brand {
-    color: #5593C2;
+    color: #0965ac;
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 28px;
@@ -66,17 +66,17 @@ p {
 }
 
 .h-brand:hover {
-    color: #5593C2;
+    color: #0965ac;
 }
 
 
 .custom-search-bar {
     border-radius: 40px;
-    border-color: #62A1A4;
+    border-color: #3ca500;
 }
 
 .h-login {
-    color: #5593C2;
+    color: #0965ac;
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 16px;
@@ -97,14 +97,14 @@ p {
     margin-left: 20px;
     padding: 10px 10px 10px 10px;
     text-align: center;
-    background-color: #62A1A4;
-    border: 1px solid #62A1A4;
+    background-color: #3ca500;
+    border: 1px solid #3ca500;
     border-radius: 10px;
     text-decoration: none;
 }
 
 .custom-btn {
-    background-color: #5593C2; /* Fondo azul */
+    background-color: #0965ac; /* Fondo azul */
     border: none;
     border-radius: 50%; /* Hacer el botón redondo */
     width: 35px; /* Ancho del botón */
@@ -124,13 +124,13 @@ p {
 }
 
 .h-login:hover {
-    color: #5593C2; /* Azul más claro en hover */
+    color: #0965ac; /* Azul más claro en hover */
     text-decoration:underline;
 }
 
 .h-sigin:hover{
     color: #ffffff; /* Azul más claro en hover */
-    background-color: #5593C2;
+    background-color: #0965ac;
 }
 
 .custom-btn i {
@@ -144,7 +144,7 @@ p {
 
 /* Cambiar color de la flecha izquierda */
 .carousel-control-prev-icon {
-    background-color: #5593C2; /* Cambia #ff0000 por el color que desees */
+    background-color: #0965ac; /* Cambia #ff0000 por el color que desees */
     border-radius: 50%; /* Opcional: Para hacer las flechas circulares */
     width: 40px;  /* Ajusta el ancho del icono */
     height: 40px; /* Ajusta la altura del icono */
@@ -152,7 +152,7 @@ p {
 
 /* Cambiar color de la flecha derecha */
 .carousel-control-next-icon {
-    background-color: #5593C2; /* Cambia #ff0000 por el color que desees */
+    background-color: #0965ac; /* Cambia #ff0000 por el color que desees */
     border-radius: 50%; /* Opcional: Para hacer las flechas circulares */
     width: 40px;  /* Ajusta el ancho del icono */
     height: 40px; /* Ajusta la altura del icono */
@@ -161,7 +161,7 @@ p {
 /* Estilos para los indicadores del carrusel */
 
 .carousel-indicators [data-bs-target] {
-    background-color: #5593C2; /* Color de fondo por defecto */
+    background-color: #0965ac; /* Color de fondo por defecto */
     border: none; /* Quitar borde por defecto */
   }
   
@@ -179,28 +179,28 @@ p {
 }
 
 .button-slide-one {
-    background-color: #5593C2;
-    border-color: #5593C2;
+    background-color: #0965ac;
+    border-color: #0965ac;
     border-radius: 15px;
 }
 
 .button-slide-one:hover {
-    background-color: #62A1A4;
-    border-color:#62A1A4;
+    background-color: #3ca500;
+    border-color:#3ca500;
 }
 
 .button-slide-one-2 {
     margin-left: 15px;
-    color: #5593C2;
+    color: #0965ac;
     background-color: #ffffff;
-    border-color: #5593C2;
+    border-color: #0965ac;
     border-radius: 15px;
 }
 
 .button-slide-one-2:hover {
     color: #ffffff;
-    background-color: #5593C2;
-    border-color: #5593C2;
+    background-color: #0965ac;
+    border-color: #0965ac;
 }
 
 .banner1-slide {
@@ -212,27 +212,27 @@ p {
 }
 
 .button-slide-two-1 {
-    background-color: #5593C2;
-    border-color: #5593C2;
+    background-color: #0965ac;
+    border-color: #0965ac;
     border-radius: 15px;
 }
 
 .button-slide-two-1:hover {
-    background-color: #62A1A4;
-    border-color:#62A1A4;
+    background-color: #3ca500;
+    border-color:#3ca500;
 }
 
 .button-slide-two-2 {
-    color: #5593C2;
+    color: #0965ac;
     background-color:#ffffff;
-    border-color:#5593C2;
+    border-color:#0965ac;
     border-radius: 15px;
 }
 
 .button-slide-two-2:hover {
     color: #ffffff;
-    background-color:#62A1A4;
-    border-color:#62A1A4;
+    background-color:#3ca500;
+    border-color:#3ca500;
 }
 
 .h-slide-two {
@@ -283,7 +283,7 @@ p {
     }
 
     .button-slide-one-2 {
-        color: #5593C2;
+        color: #0965ac;
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-size: 10px;
@@ -481,13 +481,13 @@ p {
 }
 .btn-secondary {
     color: white; 
-    background-color: #5593C2;
-    border-color: #5593C2;
+    background-color: #0965ac;
+    border-color: #0965ac;
 }
 
 .btn-secondary:hover {
-    background-color: #62A1A4;
-    border-color: #62A1A4;
+    background-color: #3ca500;
+    border-color: #3ca500;
 }
 
 .article-col {
@@ -565,82 +565,69 @@ p {
 }
 
 .v-boton {
-    background-color: #5593C2; /* Cambia este valor por el color que desees */
+    background-color: #0965ac; /* Cambia este valor por el color que desees */
     color: white; /* Cambia el color del texto si es necesario */
-    border-color: #5593C2; /* Cambia el color del borde si es necesario */
+    border-color: #0965ac; /* Cambia el color del borde si es necesario */
 }
 
 .v-boton:hover {
-    background-color: #62A1A4;
-    border-color: #62A1A4;
+    background-color: #3ca500;
+    border-color: #3ca500;
 }
 
 
 /*Profesores*/
 
 .section-profesores {
-    background: linear-gradient(180deg, rgba(9, 101, 172, 0.48), rgba(60, 165, 0, 0) 42.31%), radial-gradient(326.4% 182.46% at 100% 0, rgba(60, 165, 0, 0.368) 0%, rgba(9, 101, 172, 0.4) 25.86%, rgba(60, 165, 0, 0.4) 26.01%, rgba(60, 165, 0, 0.204) 87.98%, rgba(9, 101, 172, 0) 100%);
-
+    background: linear-gradient(180deg, rgba(9, 101, 172, 0.85), rgba(60, 165, 0, 0.5) 42.31%),
+    radial-gradient(326.4% 182.46% at 100% 0, rgba(60, 165, 0, 0.8) 0%, rgba(9, 101, 172, 0.8) 25.86%, rgba(60, 165, 0, 0.8) 26.01%, rgba(60, 165, 0, 0.6) 87.98%, rgba(9, 101, 172, 0.3) 100%);
+    padding: 30px 0;
 }
 
 .profesores {
-    padding: 0;
+    max-width: 1280px;
     margin: 0 auto;
-    
 }
 
-
-
 .profesores_titulo {
-    padding: 0px 24px;
-    margin: 0%;
-    margin-left: 1.5rem;
+    
+    padding: 0 1.5rem;
     position: relative;
 }
 
-.profesores_titulo h2 {
-    color: #fcfcfc;
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 2rem;
-    font-weight: 800;
-    font-style: normal;
-}
 
+
+.titulo-titulo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
 
 .card-profesores {
-    background-color: rgba(9, 101, 172, 0.507);
-    border-radius: 20px;
-    border: 0px;
+    background-color: #00589b;
+    border-radius: 20px;   
 }
 
-@media (min-width: 768px) {
-    .profesores_titulo::before {
-        content: " ";
-        position: absolute;
-        width: 1px;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: linear-gradient(#00589b, rgba(0, 0, 0, 0));
-    }
-}
-
-@media (max-width: 576px) {
-    .container.profesores {
-        padding: 0px 30px 0px 30px;
-    }
-
-    .img-car {
-        border-radius: 15px 15px 0px 0px;
-    }
-
+.card-profesores:hover{
+    background-color: #196aa8; /* Cambio de color en hover */
 }
 
 .img-car {
+    width: 276px;
+    overflow: hidden;
     border-top-left-radius: .75rem;
     border-top-right-radius: .75rem;
-    margin: 0%;
+    height: 282px;
+    position: relative;
+}
+
+.img-car img{
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.card-profesores:hover img{
+    transform: scale(1.1); /* Zoom en la imagen al hacer hover */
 }
 
 .profesores_lista {
@@ -649,10 +636,10 @@ p {
     gap: 1rem;
     overflow-x: scroll;
     scrollbar-width: none;
-    --ms-overflow-style: none;
-    overscroll-behavior-x: x proximity;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
     scroll-snap-align: center;
-    padding: 0 1.5 rem;
+    padding: 0 1.5rem;
 }
 
 .profesores_lista a{
@@ -660,13 +647,7 @@ p {
     text-decoration: none;
 }
 
-@media (min-width: 64rem) {
-    .profesores_lista {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        overflow: hidden;
-    }
-}
+
 
 .card-title {
     display: -webkit-box;
@@ -682,11 +663,44 @@ p {
 .card-text {
     margin-bottom: 1rem;
     color: #ffffff;
-    -webkit-line-clamp: 2;
     font-size: 1rem;
     letter-spacing: .013rem;
     line-height: 1.5rem;
     text-align: center;
+}
+
+.card-body-down {
+    padding: 1.5rem 1rem;
+}
+
+.card-body-down-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 500;
+    text-transform: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-body-down-content, .card-body-down-title {
+    margin-bottom: .5rem;
+    color: #fff;
+    -webkit-line-clamp: 1;
+    font-size: 1.375rem;
+    letter-spacing: -.008rem;
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+.card-body-down-content {
+    margin-bottom: 1rem;
+    color: #c4c8ce;
+    -webkit-line-clamp: 2;
+    font-size: 1rem;
+    letter-spacing: .013rem;
+    line-height: 1.5rem;
+    
 }
 
 .card-body hr {
@@ -699,24 +713,109 @@ p {
 .card-body-enlace{
     display: flex;
     gap: 1rem;
-    justify-content: center;
     align-items: center;
-    
+    border-top: 2px solid hsl(0, 0%, 100%);
+    padding-top: 1rem;
+    justify-content: center;
+       
 }
 
+
+
 .card-body-enlace p{
-    color: #ffffff;
-    
+    color: #fff;
     display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 1.375rem;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 1rem;
     letter-spacing: .013rem;
     text-transform: none;
     text-decoration: none;
     line-height: 1.5rem;
 }
+
+@media (min-width: 480px) {
+    .titulo-titulo {
+        color: #ffffff;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container.profesores {
+        padding: 0px 30px 0px 30px;
+    }
+
+    .img-car {
+        border-radius: 15px 15px 0px 0px;
+    }
+
+
+    
+
+    .profesores_titulo h2 {
+        color: #fcfcfc;
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 1.8rem;
+        font-weight: 800;
+        font-style: normal;
+        margin-left: auto;
+    }
+
+}
+
+
+
+@media (min-width: 48rem) {
+    .section-profesores {
+        padding: 60px 0;
+    }
+
+    .profesores_titulo::before {
+        content: " ";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(#ffffff, rgba(0, 0, 0, 0));
+    }
+
+    .profesores {
+        padding: 0;
+    }
+
+    .profesores_titulo {
+        margin-left: 1.5rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .profesores_lista {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow-x: none;
+    }
+
+    .img-car {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .titulo-titulo {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+ }
+
 
 
 
@@ -746,13 +845,13 @@ p {
 }
 
 .tp-numero {
-    color: #62A1A4;
+    color: #3ca500;
 }
 
 .item-list {
     background-color: white;
     border-radius: 10px;
-    
+    padding: 10px;
     width: 100%;
     border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.219); 
@@ -770,7 +869,7 @@ p {
 }
 
 .lista-prefer li{
-    margin-bottom: 10px; /* Espacio entre elementos */
+    margin-bottom: 20px; /* Espacio entre elementos */
 }
 
 .lista-prefer i{
@@ -779,7 +878,7 @@ p {
     font-size: 30px;
 }
 
-.item-list{
+.item-list p{
     color: #363636;
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
@@ -787,9 +886,9 @@ p {
     font-weight: 500;
     font-style: normal;
     text-align: start;
-    
-    padding: 15px;
+    align-items: center;
     width: 100%;
+    margin: 0;
 }
 
 .item-list {
@@ -814,15 +913,15 @@ p {
     font-style: normal;
     padding: 10px 10px 10px 10px;
     text-align: center;
-    background-color: #62A1A4;
-    border: 1px solid #62A1A4;
+    background-color: #3ca500;
+    border: 1px solid #3ca500;
     border-radius: 15px;
     text-decoration: none;
 }
 
 .list-buton:hover{
     color: #ffffff; /* Azul más claro en hover */
-    background-color: #5593C2;
+    background-color: #0965ac;
 }
 
 @media (max-width: 576px) {
@@ -865,7 +964,7 @@ p {
 /*Sección Noticias*/
 
 .noti-1 {
-    background-color: #62A1A4;
+    background-color: #3ca500;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -900,17 +999,17 @@ p {
 }
 
 .boton-noti {
-    background-color: #62A1A4;
-    border-color: #62A1A4;
+    background-color: #3ca500;
+    border-color: #3ca500;
 }
 
 .boton-noti:hover {
-    background-color: #5593C2;
+    background-color: #0965ac;
 }
 
 .more-info{
-    background-color: #62A1A4;
-    border: 2px solid #62A1A4;
+    background-color: #3ca500;
+    border: 2px solid #3ca500;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -1023,7 +1122,7 @@ footer {
 }
 
 .c-footer h3 {
-    color: #62A1A4;
+    color: #3ca500;
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 38px;
@@ -1065,7 +1164,7 @@ footer {
 }
 
 .footer-social a {
-    color: #62A1A4;
+    color: #3ca500;
     margin: 0 10px;
     text-decoration: none;
 }
@@ -1106,7 +1205,7 @@ footer {
 
 @media (max-width: 576px) {
     .c-footer h3 {
-        color: #62A1A4;
+        color: #3ca500;
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-size: 22px;
@@ -1134,7 +1233,7 @@ footer {
     }
 
     .c-footer h3 {
-        color: #62A1A4;
+        color: #3ca500;
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-size: 38px;
@@ -1152,7 +1251,7 @@ footer {
     }
 
     .c-footer h3 {
-        color: #62A1A4;
+        color: #3ca500;
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-size: 36px;
@@ -1231,7 +1330,7 @@ footer {
 }
 
 .form__control:hover{
-    border-color: #62A1A4  !important;
+    border-color: #3ca500  !important;
     color: #000000 !important;
 }
 
@@ -1241,16 +1340,16 @@ footer {
 }
 
 .BotonLogin  {
-    background-color: #62A1A4 !important;
-    border-color: #62A1A4 !important;
+    background-color: #3ca500 !important;
+    border-color: #3ca500 !important;
     color: #ffffff !important; /* Color del texto en negro para contraste */
     font-weight: 600;
     width: 100%;
 }
 
 .BotonLogin:hover {
-    background-color: #5593C2 !important; /* Un ligero cambio de color en el hover */
-    border-color: #5593C2 !important;
+    background-color: #0965ac !important; /* Un ligero cambio de color en el hover */
+    border-color: #0965ac !important;
     color: #ffffff !important;
 }
 
@@ -1270,7 +1369,7 @@ footer {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    color: #5593C2;
+    color: #0965ac;
 }
 
 .forgot {
@@ -1286,7 +1385,7 @@ footer {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    color: #5593C2;
+    color: #0965ac;
 }
 
 @media (max-width: 576px) {
@@ -1320,7 +1419,7 @@ select {
 }
 
 select:hover {
-    border-color: #62A1A4  !important;
+    border-color: #3ca500  !important;
     color: #000000 !important;
 }
   
@@ -1365,7 +1464,7 @@ option {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    color: #5593C2;
+    color: #0965ac;
 }
 
 
@@ -1375,9 +1474,136 @@ option {
 
 
 
+/* Preferirnos galeria */
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#display-image {
+    width: 70%;
+    height: auto;
+}
+
+.responsive-image {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .gallery-item-1 {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .gallery {
+        display: none;
+    }
+
+    .lista-prefer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive-image{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Galeria 
+
+.gallery {
+    width: 100%; 
+}
+
+.gallery-container {
+    align-items: center; 
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+}
+
+.gallery-item {
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    z-index: 0;
+    background-size: contain;
+}
+
+.gallery-item-2, .gallery-item-4{
+    height: 250px;
+    opacity: 0.7;
+    width: 100%;
+    z-index: 1;
+}
+
+.gallery-item-2 {
+    left: 25%;
+    transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+    height: 400px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 2;
+}
+
+.gallery-item-4 {
+    left: 75%;
+    transform: translateX(-50%);
+    
+}
+
+*/
+
+
+
+
 /* PALETA DE COLORE*/
 .color {
-    background-color: #5593C2
+    background-color: #0965ac
 }
 
 .color2 { 
@@ -1394,8 +1620,14 @@ option {
 
 .color5 { 
     
-    background-color: #62A1A4
+    background-color: #3ca500
 }
 /* ___________________________ */
 
 
+/*PRUEBAS*/
+
+
+  
+  
+  
