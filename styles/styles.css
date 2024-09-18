@@ -453,8 +453,6 @@ p {
 .bd-placeholder-img {
     background-color: white; 
     border-radius: 50%;
-    border: 1px solid rgba(128, 128, 128, 0.13);
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.212); 
     width: 150px; 
     height: 150px; 
     object-fit: contain; 
@@ -1125,7 +1123,7 @@ footer {
     color: #3ca500;
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 38px;
+    font-size: 24px;
     font-weight: 600;
     font-style: normal;
     text-align: start;
@@ -1141,7 +1139,7 @@ footer {
     color: #ffffff;
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     text-align: start;
@@ -1236,7 +1234,7 @@ footer {
         color: #3ca500;
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
-        font-size: 38px;
+        font-size: 24px;
         font-weight: 600;
         font-style: normal;
         text-align: start;
@@ -1254,7 +1252,7 @@ footer {
         color: #3ca500;
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
-        font-size: 36px;
+        font-size: 24px;
         font-weight: 600;
         font-style: normal;
         text-align: start;
@@ -1264,8 +1262,8 @@ footer {
 @media (min-width: 992px) {
     .c-footer {
         margin-top: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
 }
@@ -1533,6 +1531,301 @@ option {
 
 
 
+
+/* Pagina de lineas de conocimiento */
+/*Tarjetas*/
+.card-knowledge {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 100px; /* Altura ajustada para que sean rectangulares */
+    width: 100%; /* Para que ocupe el ancho del contenedor */
+    display: flex;
+    align-items: center; /* Alinea la imagen y el texto verticalmente al centro */
+  }
+
+  .knowledge-img {
+    width: 60px; /* Tamaño pequeño de la imagen */
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  .knowledge-text {
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+
+  .knowledge-text h3 {
+    font-size: 1.2rem; /* Tamaño más pequeño para las tarjetas */
+    margin-bottom: 5px;
+  }
+
+  .knowledge-text p {
+    margin: 0;
+  }
+
+  .btn-line-con {
+    font-size: 0.9rem; /* Ajusta el tamaño del botón */
+  }
+
+
+
+/* Ajustes para el header */
+.banner_conocimiento{
+    padding-top: 97px;
+}
+
+.header-community {
+    padding: 50px 0;
+    background-color: #3ca500;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Añadir espacio entre el logo y el título */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    
+}
+
+.tittle_curso_contabilidad {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fae282;
+    text-shadow: 
+    2px 2px 0 #928c00,   /* Sombra abajo derecha */
+    -2px 2px 0 #928c00,  /* Sombra abajo izquierda */
+    2px -2px 0 #928c00,  /* Sombra arriba derecha */
+    -2px -2px 0 #928c00, /* Sombra arriba izquierda */
+    2px 0px 0 #928c00,   /* Sombra derecha */
+    -2px 0px 0 #928c00,  /* Sombra izquierda */
+    0px 2px 0 #928c00,   /* Sombra abajo */
+    0px -2px 0 #928c00;  /* Sombra arriba */
+    font-family: "Public Sans", sans-serif;
+}
+
+.tittle_curso_tecnologia {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ecacff;
+    text-shadow: 
+    2px 2px 0 #892e7a,   /* Sombra abajo derecha */
+    -2px 2px 0 #892e7a,  /* Sombra abajo izquierda */
+    2px -2px 0 #892e7a,  /* Sombra arriba derecha */
+    -2px -2px 0 #892e7a, /* Sombra arriba izquierda */
+    2px 0px 0 #892e7a,   /* Sombra derecha */
+    -2px 0px 0 #892e7a,  /* Sombra izquierda */
+    0px 2px 0 #892e7a,   /* Sombra abajo */
+    0px -2px 0 #892e7a;  /* Sombra arriba */
+    font-family: "Public Sans", sans-serif;
+}
+
+.tittle_curso_habilidades {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #f69d9d;
+    text-shadow: 
+    2px 2px 0 #a23f3f,   /* Sombra abajo derecha */
+    -2px 2px 0 #a23f3f,  /* Sombra abajo izquierda */
+    2px -2px 0 #a23f3f,  /* Sombra arriba derecha */
+    -2px -2px 0 #a23f3f, /* Sombra arriba izquierda */
+    2px 0px 0 #a23f3f,   /* Sombra derecha */
+    -2px 0px 0 #a23f3f,  /* Sombra izquierda */
+    0px 2px 0 #a23f3f,   /* Sombra abajo */
+    0px -2px 0 #a23f3f;  /* Sombra arriba */
+    font-family: "Public Sans", sans-serif;
+}
+
+.tittle_curso_asociatividad {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fbb97f;
+    text-shadow: 
+    2px 2px 0 #b26500,   /* Sombra abajo derecha */
+    -2px 2px 0 #b26500,  /* Sombra abajo izquierda */
+    2px -2px 0 #b26500,  /* Sombra arriba derecha */
+    -2px -2px 0 #b26500, /* Sombra arriba izquierda */
+    2px 0px 0 #b26500,   /* Sombra derecha */
+    -2px 0px 0 #b26500,  /* Sombra izquierda */
+    0px 2px 0 #b26500,   /* Sombra abajo */
+    0px -2px 0 #b26500;  /* Sombra arriba */
+    font-family: "Public Sans", sans-serif;
+}
+
+.header-title h3 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 800;
+    color: #ffffff; 
+    
+    font-family: "Public Sans", sans-serif;
+
+
+}
+
+.header-subtitle {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: start;
+    padding-right: 100px;
+    font-family: "Public Sans", sans-serif;
+
+
+}
+/*_________________________________*/
+
+.contenido__educativo {
+    padding: 0px 0px 0px 100px;
+    
+
+}
+
+.slidebar__content2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin-left: 40px;
+    height: 100%;
+}
+
+/* Pseudo-elemento para la línea vertical */
+.slidebar__content2::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 29px;  /* Ajusta esta distancia para que la línea quede centrada respecto a los círculos */
+    width: 8px;  /* Grosor de la línea */
+    height: 100%;
+    background-color: #5ab228;  /* Color de la línea */
+    z-index: 0;  /* Asegura que la línea esté detrás de los círculos */
+}
+
+.slidebar__content__enlance {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.icon, .information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon span {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 24px;
+    color: #ffffff;
+    border: 1px solid #5ab228;
+    border-radius: 100%;
+    margin: 30px 0px 30px 0px;
+    padding: 13px 25px;
+    background-color: #5ab228;
+    position: relative;
+    z-index: 1;  /* Asegura que los círculos estén por encima de la línea */
+}
+
+/* Estilos para hover en el enlace */
+.slidebar__content__enlance:hover .icon span {
+    background-color: #cdffb2; /* Cambia el color de la bolita */
+    border-color: #5ab228;
+    color: #0965ac;
+}
+
+.slidebar__content__enlance:hover .information p {
+    text-decoration: underline; /* Subraya el texto */
+}
+
+.information p {
+    margin: 0; 
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: start;
+    color: #00589b;
+}
+
+/* Ocultamos los contenedores de información por defecto */
+.hidden {
+    display: none;
+}
+
+/* Cuando el contenedor es visible */
+.visible {
+    display: block;
+    padding: 20px;
+    
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.visible h3 {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 800;
+    color: #00589b;
+}
+
+.visible p {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    text-align: start;
+}
+
+/* Estilos para el hover (sin cambios) */
+.icon span:hover {
+    background-color: #6dc13c;
+}
+
+/* Cuando una bolita está seleccionada (clicada), cambia de color */
+.icon.selected span {
+    background-color: #6dc13c; /* Color diferente para la bolita seleccionada */
+}
+
+/* Ocultar los textos cuando sea necesario */
+.information.hidden {
+    display: none;
+}
+
+.info__container__video {
+    margin: 0 auto;
+    text-align: center;
+    
+}
 
 
 
