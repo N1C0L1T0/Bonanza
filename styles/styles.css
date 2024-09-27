@@ -1604,11 +1604,6 @@ option {
 }
 
 
-
-.header-title {
-    padding: 0;
-}
-
 .header-subtitle {
     font-size: 1rem;
     margin-top: 10px;
@@ -1623,7 +1618,7 @@ option {
     .banner_conocimiento{
         width: 100%;
         margin-top: 90px;
-        padding: 0 40px;
+        padding: 0 20px;
         background-color: #3ca500;
     }
     .tittle_CC {
@@ -1657,10 +1652,6 @@ option {
         width: 200px;
         height: 200px;
     }
-
-    .header-title {
-        padding: 0;
-    }
 }
 
 @media (min-width:992px) {
@@ -1675,7 +1666,7 @@ option {
     }
 
     .header-subtitle {
-        padding: 0 20px;
+        padding: 0;
         font-size: 20px;
     }
 
