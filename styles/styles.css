@@ -36,6 +36,7 @@ p {
 
 .home-section:nth-of-type(even) {
     background-color:  #f7f5f5;
+    padding: 100px 0;
 }
 
 
@@ -428,8 +429,7 @@ p {
 }
 
 .container.marketing {
-    padding-top: 60px; 
-    padding-bottom: 60px;
+    padding: 0px 0;
 }
 
 .container.marketing h2{
@@ -1534,21 +1534,41 @@ option {
 
 /* Pagina de lineas de conocimiento */
 /*Tarjetas*/
+.enlace__card{
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+}
+
+
 .card-knowledge {
     background-color: #ffffff;
-    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.263);
     height: 100px; /* Altura ajustada para que sean rectangulares */
     width: 100%; /* Para que ocupe el ancho del contenedor */
     display: flex;
+    justify-content: space-between;
     align-items: center; /* Alinea la imagen y el texto verticalmente al centro */
+    transition: transform 0.3s ease;
   }
 
+.card-knowledge:hover, .card-knowledge:hover h3{
+    background-color: #3ca500;
+    color: #fff;
+}
+
+.card-knowledge:hover {
+    transform: scale(1.1);
+}
+
   .knowledge-img {
-    width: 60px; /* Tamaño pequeño de la imagen */
-    height: 60px;
+    width: 80px; /* Tamaño pequeño de la imagen */
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  .row_item{
     margin-right: 15px;
   }
 
@@ -1576,12 +1596,14 @@ option {
     width: 100%;
     margin-top: 97px;
     padding: 0 60px;
-    background-color: #3ca500;
+    background-image:url(../Assets/img/fondo-contabilidad.png);
+    
+    
 }
 
 .header-community {
     padding: 50px 0;
-    background-color: #3ca500;
+    
 }
 
 .header-container {
@@ -1606,9 +1628,9 @@ option {
 .header-subtitle {
     font-size: 1rem;
     margin-top: 10px;
-    color: #ffffff;
-    font-weight: 400;
-    text-align: justify;
+    color: #363636;
+    font-weight: 600;
+    text-align: left;
     font-family: "Public Sans", sans-serif;
 }
 
@@ -1625,7 +1647,7 @@ option {
         letter-spacing: 1px;
         margin: 0;
         font-weight: 800;
-        color: #ffffff; 
+        color: #363636; 
         font-family: "Public Sans", sans-serif;
     }
 
@@ -1656,7 +1678,7 @@ option {
         letter-spacing: 1px;
         margin: 0;
         font-weight: 800;
-        color: #ffffff; 
+        color: #363636; 
         font-family: "Public Sans", sans-serif;
     }
 
@@ -1783,11 +1805,11 @@ option {
 .contenido__educativo h2 {
     font-weight: 800;
     font-family: "Public Sans", sans-serif;
-    color: #00589b;
+    color: #363636;
 }
 
 .accordion-button{
-    color: #00589b !important;
+    color: #363636 !important;
     font-weight: 600 !important;
 }
 
@@ -1803,7 +1825,7 @@ option {
     .contenido__educativo h2 {
         font-weight: 800;
         font-family: "Public Sans", sans-serif;
-        color: #00589b;
+        color: #363636;
     
     }
 }
