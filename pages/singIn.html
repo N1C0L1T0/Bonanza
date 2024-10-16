@@ -62,23 +62,32 @@
             <div class="col-lg-5 col-md-6 col-sm-12 columna2-sing d-flex justify-content-center">
                 <article class="sign-in_form">
                     <h2 class="tituloSingIn">¡Te damos la Bienvenida!</h2>
-                    <form id="sign_in_1" action="aca va la direccion a donde van los datos" accept-charset="UTF-8" method="post">
+                    <form id="login"  accept-charset="UTF-8">
                       <input name="utf8" type="hidden" value="✓" autocomplete="off">
                       <input type="hidden" name="authenticity_token" value="iWhXTorx/d0+ksJzrXPIZl9JAiCV36apCF4zvig/z/31BhAcU21VTToxzQfC3oYsM1J4s1bY0V3AC9qI511HJw==" autocomplete="off">
         
                       <div class="form__group">
-                        <label for="user[email]" class="form__label">Correo electrónico</label>
-                        <input type="email" id="user[email]" name="user[email]" placeholder="Correo electrónico" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" required class="form__control">
+                        <label for="correo" class="form__label">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required class="form__control" onblur="validarCamposInicio('correo')">
+                        <span id="error-correo" class="error-message"></span>
                       </div>
         
                       <div class="form__group">
-                        <label for="user[password]" class="form__label">Contraseña</label>
-                        <input type="password" id="user[password]" name="user[password]" placeholder="Contraseña" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" required class="form__control">
+                        <label for="password" class="form__label">Contraseña (Solo numeros)</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="password" name="password" placeholder="Contraseña" required class="form__control" onblur="validarCamposInicio('password')">
+
+                            <button type="button" id="togglePassword" class="password-toggle" style="color: #0965ac;">
+                                <i id="eyeOpen" class="fa-solid fa-eye" style="display: inline;"></i>
+                                <i id="eyeClose" class="fa-solid fa-eye-slash" style="display: none;"></i>
+                            </button>
+                        </div>
+                        <span id="error-pass" class="error-message"></span>
                       </div>
                       
                       <div class="form__button-group">
-                        <button type="submit" class="btn btn-primary BotonLogin">Iniciar sesión</button>
-                      </div>
+                        <button type="submit" id="submit-button-inicio" class="btn btn-primary BotonLogin">Iniciar Sesión</button>
+                      </div> 
 
                       <div class="container form__remember-me">
                         <div class="row">
@@ -161,5 +170,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

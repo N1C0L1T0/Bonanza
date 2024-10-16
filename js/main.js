@@ -120,25 +120,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Sección 2: Alternar visibilidad de la contraseña en el segundo campo de contraseña
 document.addEventListener('DOMContentLoaded', function () {
-    const passwordField = document.getElementById('copassword'); // Selecciona el segundo campo de contraseña (confirmación de contraseña)
+    const passwordField1 = document.getElementById('copassword'); // Selecciona el segundo campo de contraseña (confirmación de contraseña)
     const togglePasswordButton = document.getElementById('togglePassword2'); // Selecciona el botón para alternar visibilidad de este segundo campo
 
     // Reutilizamos los mismos íconos de ojo abierto y cerrado
-    const eyeOpen1 = document.getElementById('eyeOpen');
-    const eyeClose1 = document.getElementById('eyeClose');
+    const eyeOpen2 = document.getElementById('eyeOpen1');
+    const eyeClose2 = document.getElementById('eyeClose1');
 
     togglePasswordButton.addEventListener('click', function () {
         // Alternar el tipo del campo entre "password" y "text"
-        const type = passwordField.type === 'password' ? 'text' : 'password';
-        passwordField.type = type; // Cambia el tipo del campo según el estado actual
+        const type = passwordField1.type === 'password' ? 'text' : 'password';
+        passwordField1.type = type; // Cambia el tipo del campo según el estado actual
 
         // Alternar visibilidad de los íconos de ojo abierto y cerrado
         if (type === 'password') {
-            eyeOpen1.style.display = 'inline'; // Mostrar el ícono de ojo abierto
-            eyeClose1.style.display = 'none'; // Ocultar el ícono de ojo cerrado
+            eyeOpen2.style.display = 'inline'; // Mostrar el ícono de ojo abierto
+            eyeClose2.style.display = 'none'; // Ocultar el ícono de ojo cerrado
         } else {
-            eyeOpen1.style.display = 'none'; // Ocultar el ícono de ojo abierto
-            eyeClose1.style.display = 'inline'; // Mostrar el ícono de ojo cerrado
+            eyeOpen2.style.display = 'none'; // Ocultar el ícono de ojo abierto
+            eyeClose2.style.display = 'inline'; // Mostrar el ícono de ojo cerrado
         }
     });
 });
@@ -203,162 +203,310 @@ document.querySelectorAll('.slidebar__content__enlance').forEach(function(link) 
 
 // -----------------------------------------------------------VALIDACIÓN DE FORMULARIO DE REGISTRO----------------------------------------------------//
 
-function validarCampo() {
+function validarCampo(campo) {
 
     errores = []
+    const num = /^[0-9]+$/;
 
-    //Validad nombre
     let valNombre = document.getElementById('nombre');
     let nombreValue = valNombre.value.trim();
     const uu = /^[a-zA-ZÀ-ÿ ]+$/;
 
-    if (!nombreValue.match(uu) || nombreValue === "") {
-        let mensajeError = document.getElementById("error-nom");
-        mensajeError.innerHTML = "Por favor, Ingrese un nombre valido";
-        mensajeError.style.color = "red";
-        errores.push("error-nom"); // El nombre no es válido
-    } else {
-        // Limpiar mensaje de error si el nombre es válido
-        let mensajeError = document.getElementById("error-nom");
-        mensajeError.innerHTML = "";
-    }
-
-    //Validad apellido
     let apelllido1 = document.getElementById("apellido");
     let apellidoVal = apelllido1.value.trim();
     let valApellido = /^[a-zA-ZÀ-ÿ ]+$/; // Expresión regular para una sola palabra con letras
 
-    if (!valApellido.test(apellidoVal) || apellidoVal === "") {
-        let mensajeError = document.getElementById("error-ape");
-        mensajeError.innerHTML = "Por favor, Ingrese un apellido valido";
-        mensajeError.style.color = "red";
-        errores.push("error-ape"); // Agrega el error a la lista
-    } else {
-        // Limpiar mensaje de error si el apellido es válido
-        let mensajeError = document.getElementById("error-ape");
-        mensajeError.innerHTML = "";
-    }
-
-    //Validar tipo de documento
     let tipoDocumento1 = document.getElementById("tipoDocumento");
     let tipoDocumentoVal = tipoDocumento1.value;
 
-    if (tipoDocumentoVal === "") {
-        let mensajeError = document.getElementById("error-tipoD");
-        mensajeError.innerHTML = "Por favor, Seleccione una opción valida";
-        mensajeError.style.color = "red";
-        errores.push("error-tipoD"); // Agrega el error a la lista
-    } else {
-        // Limpiar mensaje de error si el apellido es válido
-        let mensajeError = document.getElementById("error-tipoD");
-        mensajeError.innerHTML = "";
-    }
-
-    // Valida numero de documento 
     let numeroDoc1 = document.getElementById("documento")
     let numeroDocVal = numeroDoc1.value.trim()
-    const num = /^[0-9]+$/;
 
-    if (numeroDocVal === "" || !numeroDocVal.match(num)) {
-        let mensajeError = document.getElementById("error-doc");
-        mensajeError.innerHTML = "Por favor, Ingrese un numero de documento valido";
-        mensajeError.style.color = "red";
-        errores.push("error-doc"); // Agrega el error a la lista
-    } else {
-        // Limpiar mensaje de error si el apellido es válido
-        let mensajeError = document.getElementById("error-doc");
-        mensajeError.innerHTML = "";
-    }
-
-    // Valida numero de telefono 
     let numero1 = document.getElementById("telefono")
     let numeroVal = numero1.value.trim()
 
-    if (numeroVal === "" || numeroVal.length !== 10) {
-        let mensajeError = document.getElementById("error-tel");
-        mensajeError.innerHTML = "Por favor, Ingrese un telefono valido";
-        mensajeError.style.color = "red";
-        errores.push("error-tel"); // Agrega el error a la lista
-    } else {
-        // Limpiar mensaje de error si el apellido es válido
-        let mensajeError = document.getElementById("error-tel");
-        mensajeError.innerHTML = "";
-    }
-
     let valCorreo = document.getElementById("correo");
-    let correoValue = valCorreo.value.trim();
-
-    // Validar email
+    let correoValue = valCorreo.value.trim();    
     let valEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!valEmail.test(correoValue)) {
-        let mensajeError = document.getElementById("error-correo");
-        mensajeError.innerHTML = "Por favor, Ingrese un correo valido";
-        mensajeError.style.color = "red";
-        errores.push("error-correo"); // El correo no es válido
-    } else {
-        // Limpiar mensaje de error si el correo es válido
-        let mensajeError = document.getElementById("error-correo");
-        mensajeError.innerHTML = "";
-    }
-
-    // Validación de la contraseña
     let password = document.getElementById("password");
     let passwordVal = password.value.trim(); // Añadido trim() para eliminar espacios
 
-    if (!passwordVal.match(num) || passwordVal === "") {
-        let mensajeError = document.getElementById("error-pass");
-        mensajeError.innerHTML = "La contraseña debe ser solo NUMEROS";
-        mensajeError.style.color = "red";
-        errores.push("error-pass"); // La contraseña no es válida
-    } else {
-        // Limpiar mensaje de error si la contraseña es válida
-        let mensajeError = document.getElementById("error-pass");
-        mensajeError.innerHTML = "";
-    }
-
-    // Validación de la confirmacion de la contraseña
     let password1 = document.getElementById("copassword");
     let passwordVal2 = password1.value.trim(); // Añadido trim() para eliminar espacios
 
-    if (!passwordVal2.match(num) || passwordVal2 === "") {
-        let mensajeError = document.getElementById("error-coPass"); // Usar "error-coPass" aquí también
-        mensajeError.innerHTML = "Por favor, ingrese un valor válido";
-        mensajeError.style.color = "red";
-        errores.push("error-pass"); // La contraseña no es válida
-    } else if (passwordVal2 !== passwordVal) {
-        let mensajeError = document.getElementById("error-coPass"); // Mantener consistencia en el id "error-coPass"
-        mensajeError.innerHTML = "Las contraseñas no coinciden";
-        mensajeError.style.color = "red";
-        errores.push("error-coPass"); // Las contraseñas no coinciden
-    } else {
-        // Limpiar mensaje de error si la contraseña es válida
-        let mensajeError = document.getElementById("error-coPass"); // Asegurar que se usa el id correcto
-        mensajeError.innerHTML = ""; // Limpia el mensaje de error
+    //Validad nombre
+    if(campo === 'nombre'){
+        if (!nombreValue.match(uu) || nombreValue === "") {
+            let mensajeError = document.getElementById("error-nom");
+            mensajeError.innerHTML = "Por favor, Ingrese un nombre valido";
+            mensajeError.style.color = "red";
+            errores.push("error-nom"); // El nombre no es válido
+        } else {
+            // Limpiar mensaje de error si el nombre es válido
+            let mensajeError = document.getElementById("error-nom");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+    //Validad apellido
+    if(campo === 'apellido') {
+        if (!valApellido.test(apellidoVal) || apellidoVal === "") {
+            let mensajeError = document.getElementById("error-ape");
+            mensajeError.innerHTML = "Por favor, Ingrese un apellido valido";
+            mensajeError.style.color = "red";
+            errores.push("error-ape"); // Agrega el error a la lista
+        } else {
+            // Limpiar mensaje de error si el apellido es válido
+            let mensajeError = document.getElementById("error-ape");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+    //Validar tipo de documento
+    if(campo === 'tipoDocumento'){
+        if (tipoDocumentoVal === "") {
+            let mensajeError = document.getElementById("error-tipoD");
+            mensajeError.innerHTML = "Por favor, Seleccione una opción valida";
+            mensajeError.style.color = "red";
+            errores.push("error-tipoD"); // Agrega el error a la lista
+        } else {
+            // Limpiar mensaje de error si el apellido es válido
+            let mensajeError = document.getElementById("error-tipoD");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+
+    // Valida numero de documento 
+    if(campo === 'documento') {
+        if (numeroDocVal === "" || !numeroDocVal.match(num)) {
+            let mensajeError = document.getElementById("error-doc");
+            mensajeError.innerHTML = "Por favor, Ingrese un numero de documento valido";
+            mensajeError.style.color = "red";
+            errores.push("error-doc"); // Agrega el error a la lista
+        } else {
+            // Limpiar mensaje de error si el apellido es válido
+            let mensajeError = document.getElementById("error-doc");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+    // Valida numero de telefono
+    if (campo === 'telefono') {
+        if (numeroVal === "" || numeroVal.length !== 10) {
+            let mensajeError = document.getElementById("error-tel");
+            mensajeError.innerHTML = "Por favor, Ingrese un telefono valido";
+            mensajeError.style.color = "red";
+            errores.push("error-tel"); // Agrega el error a la lista
+        } else {
+            // Limpiar mensaje de error si el apellido es válido
+            let mensajeError = document.getElementById("error-tel");
+            mensajeError.innerHTML = "";
+        }
     }
     
-
-    if(errores.length === 0){
-        return true
-    }else {
-        return false
+    // Validar email
+    if(campo === 'correo') {
+        if (!valEmail.test(correoValue)) {
+            let mensajeError = document.getElementById("error-correo");
+            mensajeError.innerHTML = "Por favor, Ingrese un correo valido";
+            mensajeError.style.color = "red";
+            errores.push("error-correo"); // El correo no es válido
+        } else {
+            // Limpiar mensaje de error si el correo es válido
+            let mensajeError = document.getElementById("error-correo");
+            mensajeError.innerHTML = "";
+        }
     }
+
+    // Validación de la contraseña
+    if(campo === 'password') {
+        if (!passwordVal.match(num) || passwordVal === "") {
+            let mensajeError = document.getElementById("error-pass");
+            mensajeError.innerHTML = "La contraseña debe ser solo NUMEROS";
+            mensajeError.style.color = "red";
+            errores.push("error-pass"); // La contraseña no es válida
+        } else {
+            // Limpiar mensaje de error si la contraseña es válida
+            let mensajeError = document.getElementById("error-pass");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+    // Validación de la confirmacion de la contraseña
+    if (campo === 'copassword') {
+        if (!passwordVal2.match(num) || passwordVal2 === "") {
+            let mensajeError = document.getElementById("error-coPass"); // Usar "error-coPass" aquí también
+            mensajeError.innerHTML = "Por favor, ingrese un valor válido";
+            mensajeError.style.color = "red";
+            errores.push("error-pass"); // La contraseña no es válida
+        } else if (passwordVal2 !== passwordVal) {
+            let mensajeError = document.getElementById("error-coPass"); // Mantener consistencia en el id "error-coPass"
+            mensajeError.innerHTML = "Las contraseñas no coinciden";
+            mensajeError.style.color = "red";
+            errores.push("error-coPass"); // Las contraseñas no coinciden
+        } else {
+            // Limpiar mensaje de error si la contraseña es válida
+            let mensajeError = document.getElementById("error-coPass"); // Asegurar que se usa el id correcto
+            mensajeError.innerHTML = ""; // Limpia el mensaje de error
+        }
+    }
+
+    
+    return { errores: errores.length };
 
 };
 
-// funcion para cuando de click en el paso tercero
-$("#submit-button").click(function (e) {
-    e.preventDefault(); // Prevenir el comportamiento predeterminado del botón
-    const isValid = validarCampo(); // Validar el formulario
+// Función para validar todo el formulario
+function validarFormulario() {
+   let resultado = validarCampo();
+
+   return (resultado.errores === 0) ? true : false;
     
+};
+
+// Manejo del botón "submit"
+$("#submit-button").click(function (e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del botón de enviar
+
+    const isValid = validarFormulario(); // Llamar a la función que valida todo el formulario
+    let errores1 = validarCampo().errores;
+
     if (isValid) {
-        // Si la validación es exitosa, enviar el formulario o realizar otra acción
-        console.log("BIEN")
-        document.getElementById("sign_in_1").submit(); // Para enviar el formulario
-        
-        // o puedes hacer otra acción, como mostrar un mensaje de éxito.
+        // Si la validación es exitosa, enviar el formulario
+        console.log("Formulario válido. Enviando...");
+        document.getElementById("sign_in_1").submit(); // Enviar el formulario
     } else {
-        // Manejo de errores, ya se hace en la función de validación
+        // Si hay errores, manejar la situación (ya se muestran mensajes de error en la validación)
+        console.log(errores1);
+        console.log("Errores en la validación");
+    }
+});
+
+
+// -----------------------------------------------------------VALIDACIÓN DE FORMULARIO DE INICIO DE SESIÓN----------------------------------------------------//
+function validarCamposInicio(campo) {
+
+    errores = []
+    const num = /^[0-9]+$/;
+
+    let valCorreo = document.getElementById("correo");
+    let correoValue = valCorreo.value.trim();    
+    let valEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let password = document.getElementById("password");
+    let passwordVal = password.value.trim(); // Añadido trim() para eliminar espacios
+
+    // Validar email
+    if(campo === 'correo') {
+        if (!valEmail.test(correoValue)) {
+            let mensajeError = document.getElementById("error-correo");
+            mensajeError.innerHTML = "Por favor, Ingrese un correo valido";
+            mensajeError.style.color = "red";
+            errores.push("error-correo"); // El correo no es válido
+        } else {
+            // Limpiar mensaje de error si el correo es válido
+            let mensajeError = document.getElementById("error-correo");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+    // Validación de la contraseña
+    if(campo === 'password') {
+        if (!passwordVal.match(num) || passwordVal === "") {
+            let mensajeError = document.getElementById("error-pass");
+            mensajeError.innerHTML = "La contraseña debe ser solo NUMEROS";
+            mensajeError.style.color = "red";
+            errores.push("error-pass"); // La contraseña no es válida
+        } else {
+            // Limpiar mensaje de error si la contraseña es válida
+            let mensajeError = document.getElementById("error-pass");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+    return { errores: errores.length };
+
+};
+
+// Función para validar todo el formulario
+function validarFormularioInicio() {
+   let resultado = validarCamposInicio();
+
+   return (resultado.errores === 0) ? true : false;
+    
+};
+
+// Manejo del botón "submit"
+$("#submit-button-inicio").click(function (e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del botón de enviar
+
+    const isValid = validarFormularioInicio(); // Llamar a la función que valida todo el formulario
+    let errores1 = validarCamposInicio().errores;
+
+    if (isValid) {
+        // Si la validación es exitosa, enviar el formulario
+        console.log("Formulario válido. Enviando...");
+        document.getElementById("login").submit(); // Enviar el formulario
+    } else {
+        // Si hay errores, manejar la situación (ya se muestran mensajes de error en la validación)
+        console.log(errores1);
+        console.log("Errores en la validación");
+    }
+});
+
+// -----------------------------------------------------------VALIDACIÓN DE FORMULARIO DE RECUPERAR CUENTA----------------------------------------------------//
+function validarCamposRecupera(campo) {
+
+    errores = []
+    const num = /^[0-9]+$/;
+
+    let valCorreo = document.getElementById("correo");
+    let correoValue = valCorreo.value.trim();    
+    let valEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+    // Validar email
+    if(campo === 'correo') {
+        if (!valEmail.test(correoValue)) {
+            let mensajeError = document.getElementById("error-correo");
+            mensajeError.innerHTML = "Por favor, Ingrese un correo valido";
+            mensajeError.style.color = "red";
+            errores.push("error-correo"); // El correo no es válido
+        } else {
+            // Limpiar mensaje de error si el correo es válido
+            let mensajeError = document.getElementById("error-correo");
+            mensajeError.innerHTML = "";
+        }
+    }
+
+    return { errores: errores.length };
+
+};
+
+// Función para validar todo el formulario
+function validarFormularioRecupera() {
+   let resultado = validarCamposRecupera();
+
+   return (resultado.errores === 0) ? true : false;
+    
+};
+
+// Manejo del botón "submit"
+$("#submit-button-inicio").click(function (e) {
+    e.preventDefault(); // Prevenir el comportamiento predeterminado del botón de enviar
+
+    const isValid = validarFormularioRecupera(); // Llamar a la función que valida todo el formulario
+    let errores1 = validarCamposRecupera().errores;
+
+    if (isValid) {
+        // Si la validación es exitosa, enviar el formulario
+        console.log("Formulario válido. Enviando...");
+        document.getElementById("forgot_password_form").submit(); // Enviar el formulario
+    } else {
+        // Si hay errores, manejar la situación (ya se muestran mensajes de error en la validación)
+        console.log(errores1);
         console.log("Errores en la validación");
     }
 });

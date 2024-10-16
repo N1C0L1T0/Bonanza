@@ -67,21 +67,21 @@
                 <article class="sign-in_form">
                     <h2 class="tituloSingIn">Crear una Cuenta Nueva</h2>
 
-                    <form id="sign_in_1" onsubmit="return validarCampo();" accept-charset="UTF-8">
+                    <form id="sign_in_1" accept-charset="UTF-8">
                         
                       <div class="container-fluid nombreApe">
                           <div class="row">
                               <div class="col-lg-6">
                                   <div class="form__group">
                                       <label for="nombre" class="form__label">Nombre</label>
-                                      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="form__control">
+                                      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required class="form__control" onblur="validarCampo('nombre')">
                                       <span id="error-nom" class="error-message"></span>
                                   </div>
                               </div>
                               <div class="col-lg-6">
                                   <div class="form__group">
                                       <label for="apellido" class="form__label">Apellido</label>
-                                      <input type="text" id="apellido" name="apellido" placeholder="Apellido" required class="form__control">
+                                      <input type="text" id="apellido" name="apellido" placeholder="Apellido" required class="form__control" onblur="validarCampo('apellido')">
                                       <span id="error-ape" class="error-message"></span>
                                   </div>
                               </div>
@@ -93,7 +93,7 @@
                             <div class="col-lg-6">
                                 <div class="form__group">
                                     <label for="tipoDocumento" class="form__label">Tipo de Documento</label>
-                                    <select id="tipoDocumento" name="tipoDocumento">
+                                    <select id="tipoDocumento" name="tipoDocumento" onchange="validarCampo('tipoDocumento')">
                                         <option value="">-</option>
                                         <option value="TarjetaDeIdentidad">Tarjeta De Identidad</option>
                                         <option value="CeduladeCiudadania">Cedula de Ciudadania</option>
@@ -104,7 +104,7 @@
                             <div class="col-lg-6">
                                 <div class="form__group">
                                     <label for="documento" class="form__label">Numero de documento</label>
-                                    <input type="number" id="documento" name="documento" placeholder="Numero de documento" required class="form__control">
+                                    <input type="number" id="documento" name="documento" placeholder="Numero de documento" required class="form__control" onblur="validarCampo('documento')">
                                     <span id="error-doc" class="error-message"></span>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
 
                       <div class="form__group">
                           <label for="telefono" class="form__label">Numero de telefono</label>
-                          <input type="number" id="telefono" name="telefono" placeholder="Numero de telefono" required class="form__control">
+                          <input type="number" id="telefono" name="telefono" placeholder="Numero de telefono" required class="form__control" onblur="validarCampo('telefono')">
                           <span id="error-tel" class="error-message"></span>
                       </div>
 
@@ -140,14 +140,14 @@
 
                       <div class="form__group">
                         <label for="correo" class="form__label">Correo Electrónico</label>
-                        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required class="form__control">
+                        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required class="form__control" onblur="validarCampo('correo')">
                         <span id="error-correo" class="error-message"></span>
                       </div>
 
                       <div class="form__group">
-                        <label for="password" class="form__label">Contraseña</label>
+                        <label for="password" class="form__label">Contraseña (Solo numeros)</label>
                         <div class="password-wrapper">
-                            <input type="password" id="password" name="password" placeholder="Contraseña" required class="form__control">
+                            <input type="password" id="password" name="password" placeholder="Contraseña" required class="form__control" onblur="validarCampo('password')">
 
                             <button type="button" id="togglePassword" class="password-toggle" style="color: #0965ac;">
                                 <i id="eyeOpen" class="fa-solid fa-eye" style="display: inline;"></i>
@@ -158,12 +158,12 @@
                       </div>
 
                       <div class="form__group">
-                        <label for="copassword" class="form__label">Confirmar Contraseña</label>
+                        <label for="copassword" class="form__label">Confirmar Contraseña (Solo numeros)</label>
                         <div class="password-wrapper">
-                            <input type="password" id="copassword" name="copassword" placeholder="Confirmar Contraseña" required class="form__control">
+                            <input type="password" id="copassword" name="copassword" placeholder="Confirmar Contraseña" required class="form__control" onblur="validarCampo('copassword')">
                             <button type="button" id="togglePassword2" class="password-toggle" style="color: #0965ac;">
-                                <i id="eyeOpen" class="fa-solid fa-eye" style="display: inline;"></i>
-                                <i id="eyeClose" class="fa-solid fa-eye-slash" style="display: none;"></i>
+                                <i id="eyeOpen1" class="fa-solid fa-eye" style="display: inline;"></i>
+                                <i id="eyeClose1" class="fa-solid fa-eye-slash" style="display: none;"></i>
                             </button>
                         </div>
                         <span id="error-coPass" class="error-message"></span>
@@ -171,8 +171,8 @@
                     
                       
                       <div class="form__button-group">
-                        <button type="submit" id="submit-button" class="btn btn-primary BotonLogin">Regristrarme</button>
-                      </div>
+                        <button type="submit" id="submit-button" class="btn btn-primary BotonLogin">Registrarme</button>
+                    </div>                    
                     
                     </form>
 
