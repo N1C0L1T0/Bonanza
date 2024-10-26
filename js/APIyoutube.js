@@ -1,6 +1,6 @@
 // Función para obtener datos del video y actualizar la card correspondiente
 async function getVideoData(videoId, cardNumber) {
-    const apiKey = 'AIzaSyChgACCGudRsWH68gYFFFFzSEPmBg2mbUs'; // Reemplaza con tu API Key
+    const apiKey = ''; // Reemplaza con tu API Key
     const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${videoId}&key=${apiKey}`;
 
     try {
