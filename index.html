@@ -40,10 +40,25 @@
       </button>
       
       <div class="collapse navbar-collapse" id="navbarScroll" style="padding-top: 0.5rem;">
-        <form class="d-flex" role="search">
+        
+        
+        <div class="contenedor-busqueda">
+          <div class="d-flex" role="search">
+
             <input class="form-control me-2 custom-search-bar" type="search" placeholder="¿Qué deseas aprender?" aria-label="Search">
             <button class="btn btn-primary custom-btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
-          </form>
+            <!--
+            <ul id="caja-busqueda">
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #dbdbdb;"></i>Contabilidad y Finanzas</a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #dbdbdb;"></i>Tecnologia y Sistemas</a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #dbdbdb;"></i>habilidades Blandas</a></li>
+              <li><a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #dbdbdb;"></i>Cultura Asociativa</a></li>
+            </ul>
+            -->
+          </div>
+        </div>
+        
+        
         <ul class="navbar-nav ms-auto my-2 my-lg-0 d-flex justify-content-center align-items-center"> <!--my-2 = esta clase de Bootstrap aplica un margen vertical (margin-top y margin-bottom) de 2 a la lista , my-lg-0 = Aplica un margen vertical de 0 cuando el tamaño de la pantalla es lg (grande) o mayor-->
           <li class="nav-item" style="text-align: center;">
             <a class="nav-link h-login" aria-current="page" href="pages/singIn.html">Iniciar Sesión</a>
@@ -58,7 +73,7 @@
     </nav>
 
     <!--Carrusel-->
-    <section class="home-section">
+    <section class="home-section" style="padding: 0;">
       <div id="myCarousel" class="carousel slide mb-6"  style="margin-top: 80px;">
 
           <!--Botones de desplazamineto-->
@@ -199,53 +214,81 @@
 
           <!--Elementos dentro del banner-->
           <div class="carousel-inner">
+
             <div class="carousel-item active">
-              <article class="row h-video">
-                <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-center align-items-center" style="padding: 0%;">
-                  <iframe src="https://www.youtube.com/embed/cVbAFumDQFs?si=a5OyC-hB46U3jskV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="s3-img"></iframe>
+              <div class="d-flex justify-content-center align-items-center">
+                
+                <article class="row h-video">
+                
+                <div class="col-xxl-8 col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center align-items-center" style="padding: 0 !important;">
+                  <iframe id="youtube-video-1" frameborder="0" allowfullscreen class="s3-img"></iframe>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12" style="padding-left: 20px;">
-                  <ul class="s3-list">
-                    <li><h2>Economia Popular</h2></li>
-                    <li style="padding-bottom: 10px;">
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-regular fa-star" style="color: #0965ac;"></i>
-                    </li>
-                    <li><i class="fa-solid fa-eye"></i> 673,532</li>
-                    <li style="padding-top: 10px;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis praesentium exercitationem, fuga laudantium rerum. Molestias eum, laborum corrupti qui, debitis, quisquam omnis sunt modi eveniet consequuntur voluptatum tempore. Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, totam quidem officiis optio magnam molestias fugiat.</p></li>
-                    <li><button type="button" class="btn btn-success v-boton">Ver tema completo</button></li>
-                  </ul>
-                </div>
-              </article>
+
+                <div class="col-xxl-4 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12 VideoAside">
+
+                  <h4 id="video-title-1" class="video__name"></h4>
+
+                  <p class="li-description" class="description" id="description-1" id="video-description"></p>
+                  
+                  <div class="d-flex flex-row gap-3">
+
+                    <div class="d-flex justify-content-center align-items-center gap-1">
+                      <i class="fa-solid fa-thumbs-up mb-1"></i>
+                      <p id="likes-1"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center gap-1">
+                      <i class="fa-solid fa-eye mb-1"></i>
+                      <p id="views-1"></p>  
+                    </div>
+
+                  </div>
+
+                  <button type="button" class="btn btn-success v-boton" id="original-video-button-1">Ver video completo</button>
+                  
+                </article>
+
+              </div>
             </div>
 
             <div class="carousel-item">
-               <article class="row h-video">
-                <div class="col-lg-8 col-md-12 col-sm-12 d-flex justify-content-center align-items-center" style="padding: 0%;">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/e3yuMwfPAjw?si=FaZlotME1UE1YIhy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="s3-img"></iframe>
+              <div class="d-flex justify-content-center align-items-center">
+                
+                <article class="row h-video">
+                
+                <div class="col-xxl-8 col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center align-items-center" style="padding: 0 !important;">
+                  <iframe id="youtube-video-2" frameborder="0" allowfullscreen class="s3-img"></iframe>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12" style="padding-left: 20px;">
-                  <ul class="s3-list">
-                    <li><h2>Economia Popular</h2></li>
-                    <li style="padding-bottom: 10px;">
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-solid fa-star" style="color: #0965ac;"></i>
-                      <i class="fa-regular fa-star" style="color: #0965ac;"></i>
-                    </li>
-                    <li><i class="fa-solid fa-eye"></i> 576,897</li>
-                    <li style="padding-top: 10px;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis praesentium exercitationem, fuga laudantium rerum. Molestias eum, laborum corrupti qui, debitis, quisquam omnis sunt modi eveniet consequuntur voluptatum tempore. Natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, totam quidem officiis optio magnam molestias fugiat.</p></li>
-                    <li><button type="button" class="btn btn-success v-boton">Ver tema completo</button></li>
-                  </ul>
-                </div>
-              </article>
-            </div>
-          </div>
 
+                <div class="col-xxl-4 col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12 VideoAside">
+
+                  <h4 id="video-title-2" class="video__name"></h4>
+
+                  <p class="li-description" class="description" id="description-2" id="video-description"></p>
+                  
+                  <div class="d-flex flex-row gap-3">
+
+                    <div class="d-flex justify-content-center align-items-center gap-1">
+                      <i class="fa-solid fa-thumbs-up mb-1"></i>
+                      <p id="likes-2"></p>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center gap-1">
+                      <i class="fa-solid fa-eye mb-1"></i>
+                      <p id="views-2"></p>  
+                    </div>
+
+                  </div>
+
+                  <button type="button" class="btn btn-success v-boton" id="original-video-button-2">Ver video completo</button>
+                  
+                </article>
+
+              </div>
+            </div>
+            
+          </div>
+                  
           <!--Botones de next y previous-->
           <button class="carousel-control-prev button-banner-2" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -271,7 +314,7 @@
           </h2>
         </div>
         <section class="profesores_lista">
-          <a href="">
+          <a href="pages/contabilidad.html">
             <article class="card-profesores">
               <figure class="img-car">
                 <img alt="Hernan Cortes" loading="lazy" decoding="async" data-nimg="fill" style="position:relative; height:100%; width:100%; color:transparent;" sizes="100vw" src="Assets/img/1.png">
@@ -288,7 +331,7 @@
               </div>
             </article>
           </a>
-          <a href="">
+          <a href="pages/contabilidad.html">
               <article class="card-profesores">
                 <figure class="img-car">
                   <img alt="Hernan Cortes" loading="lazy" decoding="async" data-nimg="fill" style="position:relative; height:100%; width:100%; color:transparent;" sizes="100vw" src="Assets/img/2.png">
@@ -305,7 +348,7 @@
                 </div>
               </article>
           </a>
-          <a href="">
+          <a href="pages/sistemas.html">
               <article class="card-profesores">
                 <figure class="img-car">
                   <img alt="Hernan Cortes" loading="lazy" decoding="async" data-nimg="fill" style="position:relative; height:100%; width:100%; color:transparent;" sizes="100vw" src="Assets/img/3.png">
@@ -322,7 +365,7 @@
                 </div>
               </article>
           </a>
-          <a href="">
+          <a href="pages/habilidades.html">
               <article class="card-profesores">
                 <figure class="img-car">
                   <img alt="Hernan Cortes" loading="lazy" decoding="async" data-nimg="fill" style="position:relative; height:100%; width:100%; color:transparent;" sizes="100vw" src="Assets/img/4.png">
@@ -339,8 +382,47 @@
                 </div>
               </article>
           </a>
+          <a href="pages/asociatividad.html">
+            <article class="card-profesores">
+              <figure class="img-car">
+                <img alt="Hernan Cortes" loading="lazy" decoding="async" data-nimg="fill" style="position:relative; height:100%; width:100%; color:transparent;" sizes="100vw" src="Assets/img/4.png">
+              </figure>
+              <div class="card-body-down">
+                <h3 class="card-body-down-title">Walter Rodriguez</h3>
+                <p class="card-body-down-content">Ingeniero en sistemas</p>
+                <div class="card-body-enlace">
+                  <p>Ver cursos del profesor</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16" style="color: #ffffff; margin-bottom: 16px;">
+                      <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
+                  </svg>
+                </div>
+              </div>
+            </article>
+        </a>
         </section>
       </div>
+    </section>
+
+    <!--Sllider infinito de marcas-->
+    <section>
+      <div class="slider" style="
+            --width: 100px;
+            --height: 100px;
+            --quantity: 10;
+        ">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="Assets/img/LOGO(12).png" alt=""></div>
+                <div class="item" style="--position: 2"><img src="Assets/img/LOGO(2).jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="Assets/img/LOGO(2).jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="Assets/img/LOGO(12).png" alt=""></div>
+                <div class="item" style="--position: 5"><img src="Assets/img/LOGO(2).jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="Assets/img/LOGO(12).png" alt=""></div>
+                <div class="item" style="--position: 7"><img src="Assets/img/LOGO(2).jpg" alt=""></div>
+                <div class="item" style="--position: 8"><img src="Assets/img/LOGO(12).png" alt=""></div>
+                <div class="item" style="--position: 9"><img src="Assets/img/LOGO(2).jpg" alt=""></div>
+                <div class="item" style="--position: 10"><img src="Assets/img/LOGO(12).png" alt=""></div>
+            </div>
+        </div>
     </section>
 
     <!--Porque Preferirnos-->
@@ -443,7 +525,7 @@
 
     <!--FOOTER-->
     <footer>
-      <section id="cuarto" class="home-section">
+      <section id="cuarto" class="home-section" style="padding: 0;">
           <div class="container-fluid c-footer">
               <div class="row">
                   <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footer-contact">
@@ -503,6 +585,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/APIyoutube.js"></script>
 
 </body>
 </html>
